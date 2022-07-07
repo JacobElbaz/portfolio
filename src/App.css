@@ -1,3 +1,38 @@
+.App {
+  background-color: black;
+}
+
+.About {
+  margin: 30px, 0;
+  color:dimgray;
+  font-size: x-large;
+}
+
+.Buttons {
+  display: flex;
+  justify-content: center;
+}
+     
+.btn-grad {
+  background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD  51%, #4CB8C4  100%);
+  margin: 10px 10px 10px 0;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; 
+  color: #191919;
+  text-decoration: none;
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -29,4 +64,113 @@
 
 .Motivation {
   font-size: small;
+}
+
+.Skills {
+  padding-bottom: 20px; 
+}
+
+.skill {
+  background-color: #191919;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+  transition: .4s ease;
+}
+
+h1 {
+  color: white;
+}
+
+.skill h2 {
+  color: white;
+}
+
+.skill p {
+  color: dimgray;
+}
+
+.skill:hover {
+  transform: translateY(5px);
+  background-image: linear-gradient(90deg , #3CD3AD , #4CB8C4);
+}
+
+.skill:hover p {
+  color: white;
+}
+
+.skill:hover h2 {
+  color: #191919;
+}
+
+.copyright {
+  color: dimgray;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.Contact {
+  background-color: #191919;
+  padding: 15px;
+}
+
+.Projects {
+  background-color: #191919;
+  padding: 15px;
+}
+
+.details {
+  color: aquamarine;
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: large;
+}
+
+input.contact{
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  border: 2xp solid rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  height: 50px;
+  line-height: 46px;
+  margin: 20px 0px;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background: none;
+  border: 2px solid hsla(0, 0%, 100%, .2);
+}
+
+textarea#message{
+  height: 120px;
+  background: none;
+  padding: 0 20px;
+  width: 100%;
+  line-height: 46px;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: .1px;
+  border: 2px solid hsla(0, 0%, 100%, .2);
+}
+
+.project:hover {
+  padding: 10px;
+  transition: all .3s ease;
+}
+
+.project h2 {
+  color: dimgray;
+}
+
+.project:hover h2{
+  color: aquamarine;
+}
+
+.img_project {
+  width: 400px;
 }
