@@ -158,10 +158,14 @@ textarea#message{
   border: 2px solid hsla(0, 0%, 100%, .2);
 }
 
-.project:hover {
+.project {
   padding: 10px;
-  transition: all .3s ease;
+  height: 400px;
+  width: 400px;
+  display: block;
+  overflow: hidden;
 }
+
 
 .project h2 {
   color: dimgray;
@@ -173,4 +177,9 @@ textarea#message{
 
 .img_project {
   width: 400px;
+  filter: grayscale(100%);
+}
+
+.project:hover img {
+  filter: grayscale(0);
 }

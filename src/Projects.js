@@ -11,14 +11,14 @@ function Projects() {
             <Row>
             <Col>
             <div className="project">
-                <a href="" className="text-decoration-none">
+                <a href="https://github.com/JacobElbaz/react-extension" className="text-decoration-none">
                 <h2>React - Chrome extension</h2>
                 <img src={fastopen} alt="" className="img_project"/> 
                 </a>
             </div>
             </Col>
             <Col>
-            <a href="" className="text-decoration-none">
+            <a href="https://github.com/TechLeadersSce/CICD_Class" className="text-decoration-none">
             <div className="project">
                 <h2>MERN Stack - eShop</h2>
                 <img src={shop} alt="" className="img_project"/>
@@ -26,7 +26,7 @@ function Projects() {
             </a>
             </Col>
             <Col>
-            <a href="" className="text-decoration-none">
+            <a href="https://github.com/JacobElbaz/Covid-Pandemic-Simulation" className="text-decoration-none">
             <div className="project">
                 <h2>Java - COVID Prediction</h2>
                 <img src={covid} alt="" className="img_project"/>
