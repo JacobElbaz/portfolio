@@ -160,8 +160,8 @@ textarea#message{
 
 .project {
   padding: 10px;
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 350px;
   display: block;
   overflow: hidden;
 }
@@ -176,7 +176,7 @@ textarea#message{
 }
 
 .img_project {
-  width: 400px;
+  width: 350px;
   filter: grayscale(100%);
 }
 

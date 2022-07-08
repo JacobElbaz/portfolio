@@ -3,7 +3,7 @@ import logo from './logo.jpg'
 
 function NavigationBar() {
     return (
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" expand="lg" variant="dark">
             <Container>
                 <Navbar.Brand>
                     <img
