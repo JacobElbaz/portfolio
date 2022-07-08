@@ -13,13 +13,19 @@ function NavigationBar() {
                     className="d-inline-block align-top rounded"
                     alt="Logo" />
                 </Navbar.Brand>
-                <Nav className="me-auto">
+                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Collapse id="navbarScroll">
+                <Nav
+                className="me-auto my-2 my-lg-0"
+                style={{ maxHeight: '100px' }}
+                navbarScroll>
                     <Nav.Link href="#home">Home</Nav.Link>
                     <Nav.Link href="#about">About</Nav.Link>
                     <Nav.Link href="#skills">Skills</Nav.Link>
                     <Nav.Link href="#projects">Projects</Nav.Link>
                     <Nav.Link href="#contact">Contact</Nav.Link>
                 </Nav>
+                </Navbar.Collapse>
             </Container>
         </Navbar>
     )
