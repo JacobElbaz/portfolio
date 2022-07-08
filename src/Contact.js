@@ -19,7 +19,7 @@ function Contact() {
     };
 
     return (
-        <div className="Contact">
+        <div className="Contact" id="contact">
             <Container>
                 <h1>Contact me</h1>
                 <img src={phone} alt="" /><span className="details">0503013489</span> <br />

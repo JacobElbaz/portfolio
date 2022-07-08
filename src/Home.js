@@ -4,7 +4,7 @@ import github from "./github.svg";
 
 function Home() {
     return(
-        <Container>
+        <Container id="home">
             <div className="my-5">
             <h1 style={{fontSize: "50px"}}>
             Hi, I'm Jacob Elbaz.

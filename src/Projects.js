@@ -5,7 +5,7 @@ import shop from "./shop.jpg"
 
 function Projects() {
     return(
-        <div className="Projects">
+        <div className="Projects" id="projects">
         <Container className="Projects">
             <h1>My projects</h1>
             <Row>

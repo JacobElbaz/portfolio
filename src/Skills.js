@@ -3,9 +3,9 @@ import './App.css';
 
 function Skills() {
     return(
-        <Container>
+        <Container id="skills">
             <h1>Skills</h1>
-            <div className="Skills">
+            <div className="Skills" >
                 <Row>
                 <Col className="skill">
                     <h2>Back</h2>

@@ -4,7 +4,7 @@ import CV from "./Jacob Elbaz CV.pdf";
 function About() {
     return (
         <Container>
-            <div className="About">
+            <div className="About" id="about">
                 <h1>About me</h1>
                 <p>
                     I'm Jacob, a motived and passionate student who learns quickly. <br />
