@@ -7,11 +7,11 @@ function About() {
             <div className="About" id="about">
                 <h1>About me</h1>
                 <p>
-                    I'm Jacob, a motived and passionate student who learns quickly. <br />
-                    I always desire to expand my knowledge and my skills with new technologies. <br />
-                    After high school graduation I was enrolled in the army as paratrooper warrior. <br />
-                    After that I study at the BGU preparatory for Engineering and finaly started learning Software Engineering at SCE. <br />
-                    From a very young age, my dream was to invent, to create, to concretize my ideas. <br />
+                    I'm Jacob, a motivated and passionate student who learns quickly. <br />
+                    I have always desired to expand my knowledge and skills with new technologies. <br />
+                    After high school graduation, I was enrolled in the army as a paratrooper warrior. <br />
+                    After that, I studied at the <a href="https://in.bgu.ac.il/Pages/default.aspx" target="_blank" className="text-decoration-none text-secondary">BGU</a> preparatory for Engineering and started learning Software Engineering at <a href="https://www.sce.ac.il/" target="_blank" className="text-decoration-none text-secondary">SCE</a>. <br />
+                    From a very young age, my dream was to invent, create, to concretize my ideas. <br />
                     Today I realize this dream through codes and algorithms.
                 </p>
             </div>
