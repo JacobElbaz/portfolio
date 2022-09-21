@@ -8,9 +8,21 @@
   font-size: x-large;
 }
 
+#home {
+  background-image: url("toon-rocket.gif");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
 .Buttons {
+  margin: 30px 0;
   display: flex;
   justify-content: center;
+}
+
+.p_links:hover {
+  transform: translateY(5px);
 }
      
 .btn-grad {
@@ -42,32 +54,18 @@
   color: white;
 }
 
-.Titles {
-  display: flex;
-  flex-direction: column;
-  height: 100px;
-  width: 100%;
-  margin: 10px;
-}
-
-.Up-titles {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
 .links {
-  font-size:large;
-  display: flex;
-  flex-direction: column;
+  font-size:x-large;
+  color: rgb(151, 151, 151);
 }
 
-.Motivation {
-  font-size: small;
+.links:hover {
+  color:aquamarine;
 }
 
 .Skills {
-  padding-bottom: 20px; 
+  padding-top: 30px;
+  padding-bottom: 50px; 
 }
 
 .skill {
@@ -131,7 +129,6 @@ input.contact{
   display: block;
   width: 100%;
   padding: 0 20px;
-  border: 2xp solid rgba(0, 0, 0, 1);
   border-radius: 5px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
@@ -146,9 +143,14 @@ input.contact{
   border: 2px solid hsla(0, 0%, 100%, .2);
 }
 
+input.contact:focus {
+  border-color: white;
+}
+
 textarea#message{
   height: 120px;
   background: none;
+  border-radius: 5px;
   padding: 0 20px;
   width: 100%;
   line-height: 46px;
@@ -159,6 +161,8 @@ textarea#message{
 }
 
 .project {
+  margin-top: 30px;
+  margin-bottom: 50px;
   padding: 10px;
   height: 350px;
   width: 350px;

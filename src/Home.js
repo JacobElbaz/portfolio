@@ -16,8 +16,8 @@ function Home() {
             Front-End Developer
             </h1>
             <div> 
-              <a href="https://www.linkedin.com/in/jacob-elbaz/" target="_blank" className='text-decoration-none text-white'><img src={linkedin}/></a>
-              <a href="https://github.com/JacobElbaz" target="_blank" className='text-decoration-none text-white mx-3'><img src={github}/></a>
+              <a href="https://www.linkedin.com/in/jacob-elbaz/" target="_blank" className='text-decoration-none'><img className="p_links" src={linkedin}/></a>
+              <a href="https://github.com/JacobElbaz" target="_blank" className='text-decoration-none mx-3'><img className="p_links" src={github}/></a>
             </div>
             </div>
         </Container>
