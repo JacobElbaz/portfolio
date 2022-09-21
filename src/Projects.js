@@ -44,7 +44,7 @@ function Projects() {
                     </Col>
                 </Row>
                 <div className="Buttons">
-                <button className="btn-grad">To my Github</button>
+                <a href="https://github.com/JacobElbaz/" target="_blank" className="text-decoration-none"><button className="btn-grad">To my Github</button></a>
                 </div>
             </Container>
         </div>
