@@ -21,14 +21,18 @@ function Contact() {
     return (
         <div className="Contact" id="contact">
             <Container>
-                <h1>Contact me</h1>
-                <img src={phone} alt="" /><span className="details">0503013489</span> <br />
-                <img src={email} alt="" /><span className="details">JACOBELBZ@GMAIL.COM</span>
+                <div>
+                    <h1>Contact me</h1>
+                </div>
+                <div className="my-5">
+                    <img src={phone} alt="" /><span className="details">0503013489</span> <br />
+                    <img src={email} alt="" /><span className="details">JACOBELBZ@GMAIL.COM</span>
+                </div>
                 <form ref={form} onSubmit={sendEmail} className="form">
                     <input type="text" className="contact" name="from_name" placeholder="Your name*" />
                     <input type="email" className="contact" name="from_email" placeholder="Your email*" />
                     <textarea name="message" id="message" placeholder="Write your message" />
-                    <input type="submit" value="Send" className="btn-grad"/>
+                    <input type="submit" value="Send" className="btn-grad" />
                 </form>
             </Container>
         </div>
