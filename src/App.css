@@ -209,3 +209,13 @@ textarea#message{
 .project:hover img {
   filter: grayscale(0);
 }
+
+.custom-tooltip {
+  display: none;
+  padding: 5px 12px;
+  background-color: #000000df;
+  border-radius: 4px;
+  color: #fff;
+  font-size: small;
+  font-style: italic;
+}
