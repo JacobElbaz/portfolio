@@ -1,7 +1,8 @@
 import { Col, Container, Row } from "react-bootstrap";
 import fastopen from "./FastOpen.png";
 import covid from "./covid.jpg";
-import shop from "./shop.jpg"
+import shop from "./shop.jpg";
+import event from "./event.png";
 
 function Projects() {
     return (
@@ -28,6 +29,17 @@ function Projects() {
                                     <h5>MERN Stack</h5>
                                 </div>
                                 <img src={shop} alt="" />
+                            </div>
+                        </a>
+                    </Col>
+                    <Col>
+                        <a href="https://github.com/JacobElbaz/event-website" target="_blank" className="text-decoration-none">
+                            <div className="project">
+                                <div className="project-info">
+                                    <h2>Event Website</h2>
+                                    <h5>MERN Stack</h5>
+                                </div>
+                                <img src={event} alt="" />
                             </div>
                         </a>
                     </Col>
