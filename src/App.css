@@ -32,6 +32,7 @@
   background-size: 200% auto;
   color: white;            
   border-radius: 10px;
+  border: none;
   display: block;
 }
 
@@ -100,9 +101,11 @@ h1 {
 
 .copyright {
   color: dimgray;
+  text-align: center;
   padding-top: 10px;
-  padding-left: 50px;
   padding-bottom: 10px;
+  font-family: 'Montserrat';
+  font-size: small;
 }
 
 .Contact {
@@ -192,9 +195,10 @@ textarea#message{
 }
 
 @media only screen and (max-width: 768px) {
-  .project img {filter: grayscale(0%);}
+  .project img {filter: grayscale(0%);
+  width: 35vh;}
   .project h2 {color: aquamarine;}
-  .reveal {transform: translateY(50px);
+  .reveal {transform: translateY(100px);
     opacity: .4;
     transition: .6s;
   }
