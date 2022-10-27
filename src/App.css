@@ -125,9 +125,17 @@ h1 {
 
 .details {
   color: aquamarine;
-  margin-left: 15px;
+  margin-left: 10px;
   font-weight: bold;
-  font-size: large;
+}
+
+.details a {
+  color: aquamarine;
+  text-decoration: none;
+}
+
+.details a:hover {
+  color: #3CD3AD;
 }
 
 input.contact{

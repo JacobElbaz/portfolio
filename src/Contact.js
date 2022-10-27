@@ -49,13 +49,13 @@ function Contact() {
                     </span>
                     <br />
                     <img src={email} alt="" />
-                    <span className="details">JACOBELBZ@GMAIL.COM
+                    <span className="details">
+                        <a title="send an email" href="mailto:jacobelbz@gmail.com?subject=Mail from portfolio website">
+                            JACOBELBZ@GMAIL.COM
+                        </a>
                         <button title="copy email" onClick={() => copyText("jacobelbz@gmail.com")} style={{ backgroundColor: "#191919", border: "none" }}>
                             <img src={copy} style={{ height: "20px", filter: "invert(1)" }} />
                         </button>
-                        <a title="send an email" href="mailto:jacobelbz@gmail.com?subject=Mail from portfolio website">
-                            <img src={forward} style={{ height: "25px", filter: "invert(1)" }} />
-                        </a>
                         <span className="custom-tooltip" id="jacobelbz@gmail.com">copied!</span>
                     </span>
                 </div>
