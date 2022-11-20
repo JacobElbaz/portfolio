@@ -18,7 +18,7 @@ function Skills() {
     window.addEventListener("scroll", reveal);
     return (
         <Container id="skills">
-            <h1>Skills</h1>
+            <h1 style={{color:"black"}}>Skills</h1>
             <div className="Skills" >
                 <Row>
                     <Col className="skill reveal">

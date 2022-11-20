@@ -1,13 +1,76 @@
 .App {
   background-color: black;
-  background-image: url("toon-rocket.gif");
   background-repeat: no-repeat;
   background-size:contain;
 }
 
+.header {
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  color:white;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
 .About {
   margin: 30px, 0;
-  color:dimgray;
+  color:white;
   font-size: large;
 }
 
@@ -24,19 +87,21 @@
      
 .btn-grad {
   background-color: transparent;
-  border: 2px solid aquamarine;
+  font-weight: bold;
+  border: 2px solid #7caef3;
   margin: 10px 10px 10px 0;
   padding: 5px 15px;
   text-align: center;
   text-transform: uppercase;
-  color: aquamarine;            
+  color: #7caef3;            
   border-radius: 5px;
   display: block;
 }
 
 .btn-grad:hover {
-  background-image: linear-gradient(90deg , aquamarine , #4CB8C4);
-  color: #191919;
+  background-color: #7caef3;
+  border: 2px solid #7caef3;
+  color: black;
   text-decoration: none;
 }
 
@@ -88,7 +153,7 @@ h1 {
 
 .skill:hover {
   transform: translateY(5px);
-  background-image: linear-gradient(90deg , #3CD3AD , #4CB8C4);
+  background-color: #7caef3;
 }
 
 .skill:hover p {
@@ -108,8 +173,14 @@ h1 {
   font-size: small;
 }
 
+.social img{
+  margin-inline: 5px;
+  height: 20px;
+}
+
 .Contact {
-  background-color: #191919;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(14,14,14,1) 20%, rgba(25,25,25,1) 100%);
   padding: 15px;
 }
 
@@ -124,18 +195,18 @@ h1 {
 }
 
 .details {
-  color: aquamarine;
+  color: #7caef3;
   margin-left: 10px;
   font-weight: bold;
 }
 
 .details a {
-  color: aquamarine;
+  color: #7caef3;
   text-decoration: none;
 }
 
 .details a:hover {
-  color: #3CD3AD;
+  color: white;
 }
 
 input.contact{
@@ -190,7 +261,7 @@ textarea#message{
 }
 
 .project:hover h2{
-  color: aquamarine;
+  color: white;
 }
 
 .project img {
@@ -204,16 +275,13 @@ textarea#message{
 @media only screen and (max-width: 768px) {
   .project img {filter: grayscale(0%);
   width: 35vh;}
-  .project h2 {color: aquamarine;}
+  .project h2 {color: white;}
   .reveal {transform: translateY(100px);
     opacity: .4;
     transition: .6s;
   }
-  .reveal.active p{color:white;}
-  .reveal.active h2{color:#191919;}
   .reveal.active {transform: translateY(0);
     opacity: 1;
-    background-image: linear-gradient(90deg , #3CD3AD , #4CB8C4);
   }
 }
 
