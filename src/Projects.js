@@ -22,7 +22,7 @@ function Projects() {
                         </a>
                     </Col>
                     <Col>
-                        <a href="https://github.com/TechLeadersSce/CICD_Class" target="_blank" className="text-decoration-none">
+                        <a href="https://github.com/JacobElbaz/e-Shop" target="_blank" className="text-decoration-none">
                             <div className="project">
                                 <div className="project-info">
                                     <h2>Video Games Store</h2>
