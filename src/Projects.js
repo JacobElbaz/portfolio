@@ -31,7 +31,7 @@ function Projects() {
                             <img src={shop} alt="" />
                             <div className="project-actions">
                                 <Button href="https://github.com/JacobElbaz/e-Shop" target="_blank" variant="outline-light">Repository</Button>
-                                <Button href="" variant="outline-light">Website</Button>
+                                <Button href="https://game-zone-eshop.netlify.app/" variant="outline-light">Website</Button>
                             </div>
                         </div>
                     </Col>
