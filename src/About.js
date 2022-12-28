@@ -5,7 +5,7 @@ function About() {
     return (
         <Container>
             <div className="About" id="about">
-                <h1>About me</h1>
+                <h1 style={{color:"black"}}>About me</h1>
                 <p>
                     I'm Jacob, a motivated and passionate student who learns quickly. <br />
                     I have always desired to expand my knowledge and skills with new technologies. <br />
