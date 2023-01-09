@@ -7,21 +7,18 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
+import BottomNavBar from './BottomNavBar';
 
 function App() {
   return (
     <div className='App'>
-      <NavigationBar />
+      <BottomNavBar />
       <div className="header">
-
-        
         <div className="inner-header flex">
-        <Home />
-      <About />
-      <Skills />
+          <Home />
+          <About />  
         </div>
-
-       
+        
         <div>
           <svg className="waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
@@ -36,20 +33,12 @@ function App() {
             </g>
           </svg>
         </div>
-       
-
       </div>
-     
-
-    
-      <div className="content flex">
-      <Projects />
-      <Contact />
-      <Footer />
+      <div className="content flex"><Skills />
+        <Projects />
+        <Contact />
+        <Footer />
       </div>
-      
-      
-      
     </div>
   );
 }

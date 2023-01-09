@@ -3,7 +3,6 @@ import phone from "./phone.svg";
 import email from "./email.svg";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import forward from "./forward.png";
 import copy from "./copy.png";
 
 function Contact() {
@@ -39,25 +38,17 @@ function Contact() {
                 <div>
                     <h1>Contact me</h1>
                 </div>
-                <div className="my-5">
-                    <img src={phone} alt="" />
-                    <span className="details">0503013489
-                        <button title="copy phone number" onClick={() => copyText("0503013489")} style={{ backgroundColor: "#191919", border: "none" }}>
-                            <img src={copy} style={{ height: "20px", filter: "invert(1)" }} />
-                        </button>
-                        <span className="custom-tooltip" id="0503013489">copied!</span>
-                    </span>
-                    <br />
-                    <img src={email} alt="" />
-                    <span className="details">
-                        <a title="send an email" href="mailto:jacobelbz@gmail.com?subject=Mail from portfolio website">
-                            JACOBELBZ@GMAIL.COM
-                        </a>
-                        <button title="copy email" onClick={() => copyText("jacobelbz@gmail.com")} style={{ backgroundColor: "#191919", border: "none" }}>
-                            <img src={copy} style={{ height: "20px", filter: "invert(1)" }} />
-                        </button>
-                        <span className="custom-tooltip" id="jacobelbz@gmail.com">copied!</span>
-                    </span>
+                <div className="details">
+                    <div className="contact-card">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                        Whatsapp
+                        <a href="https://wa.me/972503013489" target={'_blank'}>050-301-3489</a>
+                    </div>
+                    <div className="contact-card">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        Email
+                        <a href="mailto:jacobelbz@gmail.com?subject=Mail from portfolio website" target={'_blank'}>jacobelbz@gmail.com</a>
+                    </div>
                 </div>
                 <form ref={form} onSubmit={sendEmail} className="form">
                     <input ref={nameRef} type="text" className="contact" name="from_name" placeholder="Your name*" />
