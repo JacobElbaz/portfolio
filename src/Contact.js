@@ -1,22 +1,12 @@
 import { Container } from "react-bootstrap";
-import phone from "./phone.svg";
-import email from "./email.svg";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import copy from "./copy.png";
 
 function Contact() {
     const form = useRef();
     const nameRef = useRef();
     const emailRef = useRef();
     const messageRef = useRef();
-    const copyText = (text) => {
-        navigator.clipboard.writeText(text);
-        document.getElementById(text).style.display = "inline";
-        setTimeout(function () {
-            document.getElementById(text).style.display = "none";
-        }, 1000);
-    }
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -51,9 +41,9 @@ function Contact() {
                     </div>
                 </div>
                 <form ref={form} onSubmit={sendEmail} className="form">
-                    <input ref={nameRef} type="text" className="contact" name="from_name" placeholder="Your name*" />
-                    <input ref={emailRef} type="email" className="contact" name="from_email" placeholder="Your email*" />
-                    <textarea ref={messageRef} name="message" id="message" placeholder="Write your message" />
+                    <input ref={nameRef} type="text" className="contact" name="from_name" placeholder="Your name*" required/>
+                    <input ref={emailRef} type="email" className="contact" name="from_email" placeholder="Your email*" required/>
+                    <textarea ref={messageRef} name="message" id="message" placeholder="Write your message" required/>
                     <input type="submit" value="Send" className="btn-grad" />
                 </form>
             </Container>

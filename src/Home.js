@@ -7,7 +7,7 @@ function Home() {
         <Container id="home">
             <div className="py-5">
                 <p style={{margin: '0', color: 'black', fontWeight: 'bold'}}>Hi, I'm</p>
-            <h1 style={{fontSize: "70px", color: "black"}} className='tracking-in-expand'>
+            <h1 style={{fontSize: "70px", color: "black"}} className='tracking-in-contract-bck-bottom'>
                 Jacob Elbaz
             </h1>
             <h2 style={{color: "#7caef3"}}>

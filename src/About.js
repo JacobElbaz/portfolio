@@ -1,4 +1,3 @@
-import { Container } from "react-bootstrap";
 import CV from "./Jacob Elbaz CV.pdf";
 
 function About() {
