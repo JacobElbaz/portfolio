@@ -3,6 +3,8 @@ import fastopen from "./FastOpen.png";
 import covid from "./covid.jpg";
 import shop from "./shop.jpg";
 import event from "./event.png";
+import tictactoe from "./tictactoe.png";
+import solvia from "./solvia.png";
 
 function Projects() {
     return (
@@ -10,15 +12,16 @@ function Projects() {
             <Container className="Projects">
                 <h1 className="mb-5">My projects</h1>
                 <Row>
-                    <Col>
+                <Col>
                         <div className="project">
                             <div className="project-info">
-                                <h2>Chrome Extension</h2>
+                                <h2>Landing Page</h2>
                                 <h5>ReactJS</h5>
                             </div>
-                            <img src={fastopen} alt="" />
+                            <img src={solvia} alt="" />
                             <div className="project-actions">
-                                <Button href="https://github.com/JacobElbaz/react-extension" target="_blank" variant="outline-light">Repository</Button>
+                                <Button href="https://github.com/JacobElbaz/solviaenergie" target="_blank" variant="outline-light">Repository</Button>
+                                <Button href="https://solviaenergie.netlify.app/" target="_blank" variant="outline-light">Website</Button>
                             </div>
                         </div>
                     </Col>
@@ -45,6 +48,30 @@ function Projects() {
                             <div className="project-actions">
                                 <Button href="https://github.com/JacobElbaz/event-website" target="_blank" variant="outline-light">Repository</Button>
                                 <Button href="https://event-react-frontend.netlify.app/" target="_blank" variant="outline-light">Website</Button>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div className="project">
+                            <div className="project-info">
+                                <h2>Tic Tac Toe</h2>
+                                <h5>React Native</h5>
+                            </div>
+                            <img src={tictactoe} alt="" />
+                            <div className="project-actions">
+                                <Button href="hhttps://github.com/JacobElbaz/tic-tac-toe" target="_blank" variant="outline-light">Repository</Button>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div className="project">
+                            <div className="project-info">
+                                <h2>Chrome Extension</h2>
+                                <h5>ReactJS</h5>
+                            </div>
+                            <img src={fastopen} alt="" />
+                            <div className="project-actions">
+                                <Button href="https://github.com/JacobElbaz/react-extension" target="_blank" variant="outline-light">Repository</Button>
                             </div>
                         </div>
                     </Col>
