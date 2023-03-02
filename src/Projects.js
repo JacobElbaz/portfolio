@@ -1,6 +1,6 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
 import fastopen from "./FastOpen.png";
-import covid from "./covid.jpg";
+import komin from "./Komin.png";
 import shop from "./shop.jpg";
 import event from "./event.png";
 import tictactoe from "./tictactoe.png";
@@ -78,12 +78,12 @@ function Projects() {
                     <Col>
                         <div className="project">
                             <div className="project-info">
-                                <h2>COVID Prediction</h2>
-                                <h5>Java / OOP / Design Patterns</h5>
+                                <h2>Social Network</h2>
+                                <h5>React Native</h5>
                             </div>
-                            <img src={covid} alt="" />
+                            <img src={komin} alt="" />
                             <div className="project-actions">
-                                <Button href="https://github.com/JacobElbaz/Covid-Pandemic-Simulation" target="_blank" variant="outline-light">Repository</Button>
+                                <Button href="https://github.com/JacobElbaz/komin" target="_blank" variant="outline-light">Repository</Button>
                             </div>
                         </div>
                     </Col>
