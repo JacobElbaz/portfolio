@@ -12,8 +12,8 @@ function About() {
                 Today I realize this dream through codes and algorithms.
             </p>
             <div className="Buttons">
-                <a href={CV} download="Jacob Elbaz CV.pdf" style={{ textDecoration: "none" }}><button className="btn-grad" >Download CV</button></a>
-                <a href="#contact" style={{ textDecoration: "none" }}><button className="btn-grad">Contact me</button></a>
+                <a href={CV} download="Jacob Elbaz CV.pdf" style={{ textDecoration: "none" }}><button className="button-30" >Download CV</button></a>
+                <a href="#contact" style={{ textDecoration: "none" }}><button className="button-30">Contact me</button></a>
             </div>
         </div>
     )
