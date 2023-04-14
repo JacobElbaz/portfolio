@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import ChatBot from "./ChatBot";
 
 function Contact() {
     const form = useRef();
@@ -25,6 +26,7 @@ function Contact() {
     return (
         <div className="Contact" id="contact">
             <Container>
+                <ChatBot/>
                 <div>
                     <h1>Contact me</h1>
                 </div>
