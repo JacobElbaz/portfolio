@@ -1,6 +1,6 @@
 import React from 'react'
 import { Configuration, OpenAIApi } from 'openai';
-import { CircularProgress, LinearProgress } from '@mui/material';
+import { CircularProgress } from '@mui/material';
 
 export default function ChatBot() {
     const configuration = new Configuration({
@@ -30,7 +30,6 @@ export default function ChatBot() {
             setOutput(response.data.choices[0].text)
         } catch (err) {
             console.log(err)
-            console.log(process.env.REACT_APP_OPENAI_API_KEY);
             setOutput('Error')
         }
         setLoading(false);
