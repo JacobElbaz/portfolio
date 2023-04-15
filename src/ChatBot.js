@@ -30,6 +30,7 @@ export default function ChatBot() {
             setOutput(response.data.choices[0].text)
         } catch (err) {
             console.log(err)
+            console.log(process.env.REACT_APP_OPENAI_API_KEY);
             setOutput('Error')
         }
         setLoading(false);
@@ -37,6 +38,7 @@ export default function ChatBot() {
     return (
         <div>
             <h1>Ask me a question</h1>
+            <h4>Jacob AI using Chat-GPT</h4>
             <input type='text' onChange={handlePrompt} className='contact' onKeyDown={handleKeyDown} placeholder='Your Question'/>
             <div className='output'>
                 {loading ? <CircularProgress color='inherit'/> : output}
