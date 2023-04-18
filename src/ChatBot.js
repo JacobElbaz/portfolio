@@ -6,6 +6,7 @@ export default function ChatBot() {
     const configuration = new Configuration({
         apiKey: process.env.REACT_APP_OPENAI_API_KEY,
     })
+    delete configuration.baseOptions.headers['User-Agent']
     const openai = new OpenAIApi(configuration)
     const [output, setOutput] = React.useState('')
     const [prompt, setPrompt] = React.useState()
@@ -14,7 +15,7 @@ export default function ChatBot() {
         setPrompt(e.target.value)
     }
     const handleKeyDown = (e) => {
-        if (e.key == 'Enter'){
+        if (e.key == 'Enter') {
             handleSend();
         }
     }
@@ -38,10 +39,14 @@ export default function ChatBot() {
         <div>
             <h1>Ask me a question</h1>
             <h4>Jacob AI using Chat-GPT</h4>
-            <input type='text' onChange={handlePrompt} className='contact' onKeyDown={handleKeyDown} placeholder='Your Question'/>
+            <div className='gpt'>
+                <input type='text' onChange={handlePrompt} onKeyDown={handleKeyDown} placeholder='Your Question' />
+                <button onClick={handleSend}><ion-icon name='send'></ion-icon></button>
+            </div>
             <div className='output'>
-                {loading ? <CircularProgress color='inherit'/> : output}
+                {loading ? <CircularProgress color='inherit' /> : output}
             </div>
         </div>
     )
 }
+
