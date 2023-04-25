@@ -11,7 +11,6 @@ import BottomNavBar from './BottomNavBar';
 function App() {
   return (
     <div className='App'>
-      <BottomNavBar />
       <div className="header">
         <div className="inner-header flex">
           <Home />
