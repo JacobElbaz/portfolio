@@ -201,8 +201,8 @@
 
 .about p {
   line-height: 30px;
+  max-width: 750px;
 }
-
 
 .Buttons {
   margin: 30px 0;
@@ -538,4 +538,8 @@ textarea#message {
   color: #fff;
   font-size: small;
   font-style: italic;
+}
+
+.chatbot{
+  margin-bottom: 75px;
 }

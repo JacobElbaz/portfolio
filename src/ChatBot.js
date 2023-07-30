@@ -8,7 +8,7 @@ export default function ChatBot() {
     })
     delete configuration.baseOptions.headers['User-Agent']
     const openai = new OpenAIApi(configuration)
-    const [output, setOutput] = React.useState('')
+    const [output, setOutput] = React.useState('The response will appear here')
     const [prompt, setPrompt] = React.useState()
     const [loading, setLoading] = React.useState(false)
     const handlePrompt = (e) => {
@@ -36,9 +36,9 @@ export default function ChatBot() {
         setLoading(false);
     }
     return (
-        <div>
+        <div className='chatbot'>
             <h1>Ask me a question</h1>
-            <h4>Jacob AI using Chat-GPT</h4>
+            <p style={{color: '#5538fa'}}>Jacob AI using Chat-GPT</p>
             <div className='gpt'>
                 <input type='text' onChange={handlePrompt} onKeyDown={handleKeyDown} placeholder='Your Question' />
                 <button onClick={handleSend}><ion-icon name='send'></ion-icon></button>
