@@ -1,6 +1,7 @@
 import React from 'react'
 import { Configuration, OpenAIApi } from 'openai';
 import { CircularProgress } from '@mui/material';
+import r2d2 from './r2d2.png';
 
 export default function ChatBot() {
     const configuration = new Configuration({
@@ -37,6 +38,7 @@ export default function ChatBot() {
     }
     return (
         <div className='chatbot'>
+            <img src={r2d2} alt="bot" height={120}/>
             <h1>Ask me a question</h1>
             <p style={{color: '#5538fa'}}>Jacob AI using Chat-GPT</p>
             <div className='gpt'>
