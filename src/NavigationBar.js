@@ -3,7 +3,7 @@ import logo from './logo.jpg'
 
 function NavigationBar() {
     return (
-        <Navbar fixed='top' expand="lg" variant="dark" style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
+        <Navbar fixed='top' variant="dark" style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
             <Container>
                 <Navbar.Brand href='/'>
                     <img
