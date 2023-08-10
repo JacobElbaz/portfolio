@@ -11,7 +11,7 @@ function Home() {
                     Jacob Elbaz
                 </h1>
                 <h2 style={{ color: "black" }}>
-                    Software Engineering
+                    Software Engineer
                 </h2>
                 <h2 style={{ color: "black" }}>
                     FullStack Developer

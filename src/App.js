@@ -58,7 +58,7 @@ function App() {
       </div>
       <div className="content flex">
         <Skills />
-        <Contact />
+        <Projects />
         <Footer />
       </div>
     </div>
