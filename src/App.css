@@ -428,7 +428,6 @@ input.contact:focus {
 
 .gpt {
   display: flex;
-  justify-content: space-between;
   border-radius: 5px;
   border: 2px solid hsla(0, 0%, 100%, .2);
   height: 50px;
@@ -446,7 +445,7 @@ input.contact:focus {
   font-size: 15px;
   letter-spacing: 1px;
   background: none;
-  flex-grow: 1;
+  width: 100px;
 }
 
 .gpt button {
