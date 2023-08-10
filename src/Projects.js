@@ -59,7 +59,7 @@ function Projects() {
                             </div>
                             <img src={tictactoe} alt="" />
                             <div className="project-actions">
-                                <Button href="hhttps://github.com/JacobElbaz/tic-tac-toe" target="_blank" variant="outline-light">Repository</Button>
+                                <Button href="https://github.com/JacobElbaz/tic-tac-toe" target="_blank" variant="outline-light">Repository</Button>
                             </div>
                         </div>
                     </Col>
