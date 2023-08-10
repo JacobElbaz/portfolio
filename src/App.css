@@ -446,6 +446,7 @@ input.contact:focus {
   font-size: 15px;
   letter-spacing: 1px;
   background: none;
+  flex-grow: 1;
 }
 
 .gpt button {
@@ -571,24 +572,6 @@ textarea#message {
   font-style: italic;
 }
 
-.chatbot {
-  margin-bottom: 75px;
-  background-color: #222222;
-  padding: 15px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
-}
-
-.chatbot img {
-  transform: translateY(-50px);
-  padding: 0;
-  margin: 0;
-  animation: floating 3s ease-in-out infinite;
-}
-
-.chatbot h1 {
-  transform: translateY(-20px);
-}
 
 @keyframes floating {
 
