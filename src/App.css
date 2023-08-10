@@ -445,7 +445,7 @@ input.contact:focus {
   font-size: 15px;
   letter-spacing: 1px;
   background: none;
-  width: 100px;
+  width: 90%;
 }
 
 .gpt button {
