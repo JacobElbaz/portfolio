@@ -426,7 +426,46 @@ input.contact:focus {
   border-color: white;
 }
 
+.gpt {
+  display: flex;
+  border-radius: 5px;
+  border: 2px solid hsla(0, 0%, 100%, .2);
+  height: 50px;
+  margin: 20px 0;
+}
 
+.gpt input {
+  padding: 0 20px;
+  border: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  line-height: 46px;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background: none;
+  flex-grow: 1;
+}
+
+.gpt button {
+  background: none;
+  color: #7caef3;
+  border: 2px solid;
+  border-radius: 5px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gpt button:hover {
+  color: white;
+}
+
+.gpt:focus-within {
+  outline: 2px solid white;
+}
 
 textarea#message {
   height: 200px;
