@@ -8,6 +8,10 @@
   height: 100vh;
 }
 
+.navbar {
+  transition: background-color 0.3s ease-in-out; /* Ajustez la durée et l'effet selon vos préférences */
+}
+
 .button-30 {
   align-items: center;
   appearance: none;

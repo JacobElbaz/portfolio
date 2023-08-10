@@ -1,9 +1,14 @@
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import logo from './logo.jpg'
+import { useState } from 'react'
 
 function NavigationBar() {
+    const [expanded, setExpanded] = useState(false);
+    const handleToggle = () => {
+        setExpanded(!expanded)
+    }
     return (
-        <Navbar fixed='top' expand="lg" variant="dark" style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
+        <Navbar fixed='top' expand="lg" variant="dark" style={ expanded ? {backgroundColor: 'black'} : { backgroundColor: 'rgba(0,0,0,0.4)' }} onToggle={handleToggle}>
             <Container>
                 <Navbar.Brand href='/'>
                     <img
