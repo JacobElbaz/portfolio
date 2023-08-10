@@ -14,6 +14,7 @@ function App() {
       <div className="header">
         <div className="inner-header flex">
           <NavigationBar/>
+          <Home />
           <About />
         </div>
         <div>
@@ -56,7 +57,6 @@ function App() {
         </div>
       </div>
       <div className="content flex">
-        <Skills />
         <Projects />
         <Contact />
         <Footer />
