@@ -62,7 +62,7 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  background-size: 400% 400%;
+  /*background-size: 400% 400%;*/
 }
 
 @keyframes gradient {
