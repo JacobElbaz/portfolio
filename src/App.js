@@ -6,12 +6,10 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import NavigationBar from "./NavigationBar";
 
 function App() {
   return (
     <div className="App">
-      <NavigationBar/>
       <div className="header">
         <div className="inner-header flex">
           <Home />
