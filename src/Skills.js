@@ -22,37 +22,35 @@ function Skills() {
     window.addEventListener("scroll", reveal);
     return (
         <div className="Skills">
-            <Container className="Skills" id="skills">
-                <h1>Skills</h1>
-                <div className="Skills" >
-                    <Row>
-                        <Col className="skill reveal">
-                            <h2><FontAwesomeIcon icon={faServer} /></h2>
-                            <h2>BackEnd</h2><br />
-                            <p><FontAwesomeIcon icon={faPython}></FontAwesomeIcon> Python</p>
-                            <p><FontAwesomeIcon icon={faJava} /> Java</p>
-                            <p><FontAwesomeIcon icon={faNodeJs} /> NodeJs</p>
-                            <p><FontAwesomeIcon icon={faDatabase} /> MongoDB</p>
-                        </Col>
-                        <Col className="skill reveal">
-                            <h2><FontAwesomeIcon icon={faDisplay} /></h2>
-                            <h2>FrontEnd</h2><br />
-                            <p><FontAwesomeIcon icon={faJs} /> JavaScript</p>
-                            <p><FontAwesomeIcon icon={faReact} /> React</p>
-                            <p><FontAwesomeIcon icon={faHtml5} /> HTML5</p>
-                            <p><FontAwesomeIcon icon={faCss3} /> CSS3</p>
-                            <p><FontAwesomeIcon icon={faBootstrap} /> Bootstrap</p>
-                        </Col>
-                        <Col className="skill reveal">
-                            <h2><FontAwesomeIcon icon={faEllipsis} /></h2>
-                            <h2>More</h2><br />
-                            <p><FontAwesomeIcon icon={faLinux} /> Linux</p>
-                            <p><FontAwesomeIcon icon={faLightbulb} /> Algorithms</p>
-                            <p><FontAwesomeIcon icon={faCubes} /> Data Structures</p>
-                            <p><FontAwesomeIcon icon={faSolarPanel} /> Design Patterns</p>
-                        </Col>
-                    </Row>
-                </div>
+            <h1 style={{ marginTop: '50px' }}>Skills</h1>
+            <Container>
+                <Row>
+                    <Col className="skill reveal">
+                        <h2><FontAwesomeIcon icon={faServer} /></h2>
+                        <h2>BackEnd</h2><br />
+                        <p><FontAwesomeIcon icon={faPython}></FontAwesomeIcon> Python</p>
+                        <p><FontAwesomeIcon icon={faJava} /> Java</p>
+                        <p><FontAwesomeIcon icon={faNodeJs} /> NodeJs</p>
+                        <p><FontAwesomeIcon icon={faDatabase} /> MongoDB</p>
+                    </Col>
+                    <Col className="skill reveal">
+                        <h2><FontAwesomeIcon icon={faDisplay} /></h2>
+                        <h2>FrontEnd</h2><br />
+                        <p><FontAwesomeIcon icon={faJs} /> JavaScript</p>
+                        <p><FontAwesomeIcon icon={faReact} /> React</p>
+                        <p><FontAwesomeIcon icon={faHtml5} /> HTML5</p>
+                        <p><FontAwesomeIcon icon={faCss3} /> CSS3</p>
+                        <p><FontAwesomeIcon icon={faBootstrap} /> Bootstrap</p>
+                    </Col>
+                    <Col className="skill reveal">
+                        <h2><FontAwesomeIcon icon={faEllipsis} /></h2>
+                        <h2>More</h2><br />
+                        <p><FontAwesomeIcon icon={faLinux} /> Linux</p>
+                        <p><FontAwesomeIcon icon={faLightbulb} /> Algorithms</p>
+                        <p><FontAwesomeIcon icon={faCubes} /> Data Structures</p>
+                        <p><FontAwesomeIcon icon={faSolarPanel} /> Design Patterns</p>
+                    </Col>
+                </Row>
             </Container>
         </div>
     )

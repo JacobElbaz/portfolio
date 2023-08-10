@@ -2,13 +2,19 @@
   font-family: 'Poppins';
 }
 
+#home {
+  background-image: url('./hero.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
 .button-30 {
   align-items: center;
   appearance: none;
   background-color: #FCFCFD;
   border-radius: 4px;
   border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   box-sizing: border-box;
   color: #36395A;
   display: inline-flex;
@@ -22,12 +28,12 @@
   position: relative;
   text-align: left;
   text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
+  transition: box-shadow .15s, transform .15s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  will-change: box-shadow,transform;
+  will-change: box-shadow, transform;
   font-size: 18px;
   margin: 10px 10px 10px 0;
 }
@@ -47,46 +53,71 @@
 }
 
 .tracking-in-contract-bck-bottom {
-	-webkit-animation: tracking-in-contract-bck-bottom 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-contract-bck-bottom 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-          font-family: 'Josefin Sans';
-          font-weight: bold;
+  -webkit-animation: tracking-in-contract-bck-bottom 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, gradient 10s ease infinite;
+  animation: tracking-in-contract-bck-bottom 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, gradient 10s ease infinite;
+  font-family: 'Josefin Sans';
+  font-weight: bold;
+  background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 50%, rgba(84, 58, 183, 1) 100% );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  background-size: 400% 400%;
 }
 
- @-webkit-keyframes tracking-in-contract-bck-bottom {
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes tracking-in-contract-bck-bottom {
   0% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
     opacity: 0;
   }
+
   40% {
     opacity: 0.6;
   }
+
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     opacity: 1;
   }
 }
+
 @keyframes tracking-in-contract-bck-bottom {
   0% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
     opacity: 0;
   }
+
   40% {
     opacity: 0.6;
   }
+
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     opacity: 1;
   }
 }
 
 
 .output {
-  background-color:#5538fa;
+  background-color: #5538fa;
   border-radius: 5px;
   padding: 10px;
   color: #fff;
@@ -182,8 +213,9 @@
   align-content: space-around;
   color: white;
   font-size: large;
-  min-height: 50vh;
-  padding: 10px;
+  padding-inline: 10px;
+  padding-block: 100px;
+  min-height: 90vh;
 }
 
 .about p {
@@ -250,9 +282,12 @@
 }
 
 .Skills {
-  padding-top: 30px;
-  padding-bottom: 50px;
+  min-height: 100vh;
   background-color: #191919;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
 }
 
 .skill {
@@ -318,12 +353,14 @@ h1 {
 .Contact {
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(14, 14, 14, 1) 20%, rgba(25, 25, 25, 1) 100%);
-  padding: 15px;
+  padding-inline: 15px;
+  padding-block: 100px;
 }
 
 .Projects {
   background-color: #191919;
-  padding: 15px;
+  padding-inline: 15px;
+  padding-block: 50px;
 }
 
 .projects {
@@ -381,7 +418,7 @@ input.contact:focus {
   border-color: white;
 }
 
-.gpt{
+.gpt {
   display: flex;
   border-radius: 5px;
   border: 2px solid hsla(0, 0%, 100%, .2);
@@ -389,7 +426,7 @@ input.contact:focus {
   margin: 20px 0;
 }
 
-.gpt input{
+.gpt input {
   display: block;
   padding: 0 20px;
   border: none;
@@ -415,7 +452,7 @@ input.contact:focus {
   align-items: center;
 }
 
-.gpt button:hover{
+.gpt button:hover {
   color: white;
 }
 
@@ -527,9 +564,9 @@ textarea#message {
   font-style: italic;
 }
 
-.chatbot{
+.chatbot {
   margin-bottom: 75px;
-  background-color:#222222;
+  background-color: #222222;
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
@@ -547,9 +584,12 @@ textarea#message {
 }
 
 @keyframes floating {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(-20px);
   }
+
   50% {
     transform: translateY(-50px);
   }

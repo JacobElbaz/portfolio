@@ -24,10 +24,10 @@ function Contact() {
     };
 
     return (
-        <div className="Contact" id="contact">
+        <div className="Contact">
             <Container>
-                <ChatBot/>
-                <div>
+                <ChatBot />
+                <div style={{paddingTop: '100px'}} id="contact">
                     <h1>Contact me</h1>
                 </div>
                 <div className="details">
@@ -43,9 +43,9 @@ function Contact() {
                     </div>
                 </div>
                 <form ref={form} onSubmit={sendEmail} className="form">
-                    <input ref={nameRef} type="text" className="contact" name="from_name" placeholder="Your name*" required/>
-                    <input ref={emailRef} type="email" className="contact" name="from_email" placeholder="Your email*" required/>
-                    <textarea ref={messageRef} name="message" id="message" placeholder="Write your message" required/>
+                    <input ref={nameRef} type="text" className="contact" name="from_name" placeholder="Your name*" required />
+                    <input ref={emailRef} type="email" className="contact" name="from_email" placeholder="Your email*" required />
+                    <textarea ref={messageRef} name="message" id="message" placeholder="Write your message" required />
                     <input type="submit" value="Send" className="btn-grad" />
                 </form>
             </Container>

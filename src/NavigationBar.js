@@ -3,7 +3,7 @@ import logo from './logo.jpg'
 
 function NavigationBar() {
     return (
-        <Navbar bg="dark" expand="lg" variant="dark">
+        <Navbar fixed='top' expand="lg" variant="dark" style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
             <Container>
                 <Navbar.Brand href='/'>
                     <img
@@ -12,7 +12,7 @@ function NavigationBar() {
                         height="40"
                         className="d-inline-block align-top rounded"
                         alt="Logo"
-                        />
+                    />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
