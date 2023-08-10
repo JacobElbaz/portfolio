@@ -14,7 +14,6 @@ function App() {
       <div className="header">
         <div className="inner-header flex">
           <NavigationBar/>
-          <Home />
           <About />
         </div>
         <div>
