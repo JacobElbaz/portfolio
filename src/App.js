@@ -15,7 +15,6 @@ function App() {
         <div className="inner-header flex">
           <NavigationBar/>
           <Home />
-          <About />
         </div>
         <div>
           <svg
@@ -57,6 +56,7 @@ function App() {
         </div>
       </div>
       <div className="content flex">
+        <Skills />
         <Projects />
         <Contact />
         <Footer />
