@@ -8,18 +8,21 @@ function Contact() {
     const nameRef = useRef();
     const emailRef = useRef();
     const messageRef = useRef();
+    const [loading, setLoading] = React.useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
-
+        setLoading(true);
         emailjs.sendForm('service_0b8ior8', 'template_n2h7xy6', form.current, 'mEYfRDD7YhHd42iLG')
             .then((result) => {
                 nameRef.current.value = null;
                 emailRef.current.value = null;
                 messageRef.current.value = null;
+                setLoading(false);
                 alert("Message Sent , I will get back to you shortly", result.text);
             }, (error) => {
                 alert("An error occurred, Please try again", error.text);
+                setLoading(false);
             });
     };
 
@@ -46,7 +49,7 @@ function Contact() {
                     <input ref={nameRef} type="text" className="contact" name="from_name" placeholder="Your name*" required />
                     <input ref={emailRef} type="email" className="contact" name="from_email" placeholder="Your email*" required />
                     <textarea ref={messageRef} name="message" id="message" placeholder="Write your message" required />
-                    <input type="submit" value="Send" className="btn-grad" />
+                    <input type="submit" value={loading ? 'sending...' : 'send'} className="btn-grad" disabled={loading}/>
                 </form>
             </Container>
         </div>
