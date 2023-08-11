@@ -588,6 +588,7 @@ textarea#message {
 }
 
 .chatbot {
+  position: relative;
   margin-bottom: 75px;
   background-color: #222222;
   padding: 15px;
@@ -616,4 +617,20 @@ textarea#message {
   50% {
     transform: translateY(-50px);
   }
+}
+
+.info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.info svg {
+  font-size: x-large;
+  color: #bebebe;
+  margin: 0;
+  padding: 0;
 }
