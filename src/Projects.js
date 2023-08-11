@@ -5,6 +5,20 @@ import shop from "./shop.jpg";
 import event from "./event.png";
 import tictactoe from "./tictactoe.png";
 import solvia from "./solvia.png";
+import reactIcon from './react-color.svg';
+import axiosIcon from './axios-color.svg';
+import expoIcon from './expo-color.svg';
+import expressIcon from './express-color.svg';
+import mongoIcon from './mongodb-color.svg';
+import muiIcon from './mui-color.svg';
+import nodeIcon from './nodedotjs-color.svg';
+import reactRouterIcon from './reactrouter-color.svg';
+import reduxIcon from './redux-color.svg';
+import socketIcon from './socketdotio-color.svg';
+import typeScriptIcon from './typescript-color.svg';
+import openaiIcon from './openai-color.svg';
+import fastapiIcon from './fastapi-color.svg';
+import spoilMe from './spoilme.png';
 
 function Projects() {
     return (
@@ -16,7 +30,9 @@ function Projects() {
                         <div className="project">
                             <div className="project-info">
                                 <h2>Landing Page</h2>
-                                <h5>ReactJS</h5>
+                                <img src={reactIcon} alt="ReactJS" title="ReactJS"/>
+                                <img src={reactRouterIcon} alt="React Router" title="React Router"/>
+                                <img src={muiIcon} alt="MaterialUI" title="Material UI"/>
                             </div>
                             <img src={solvia} alt="" />
                             <div className="project-actions">
@@ -29,7 +45,13 @@ function Projects() {
                         <div className="project">
                             <div className="project-info">
                                 <h2>Video Games Store</h2>
-                                <h5>MERN Stack</h5>
+                                <img src={reactIcon} alt="ReactJS" title="ReactJS"/>
+                                <img src={reduxIcon} alt="Redux" title="Redux"/>
+                                <img src={reactRouterIcon} alt="React Router" title="React Router"/>
+                                <img src={axiosIcon} alt="Axios" title="Axios"/>
+                                <img src={nodeIcon} alt="Node.js" title="Node.js"/>
+                                <img src={expressIcon} alt="express.js" title="express.js" style={{filter: 'invert(50%)'}}/>
+                                <img src={mongoIcon} alt="mongoDB" title="mongoDB"/>
                             </div>
                             <img src={shop} alt="" />
                             <div className="project-actions">
@@ -42,7 +64,10 @@ function Projects() {
                         <div className="project">
                             <div className="project-info">
                                 <h2>Event Website</h2>
-                                <h5>MERN Stack</h5>
+                                <img src={reactIcon} alt="ReactJS" title="ReactJS"/>
+                                <img src={nodeIcon} alt="Node.js" title="Node.js"/>
+                                <img src={expressIcon} alt="express.js" title="express.js" style={{filter: 'invert(50%)'}}/>
+                                <img src={mongoIcon} alt="mongoDB" title="mongoDB"/>
                             </div>
                             <img src={event} alt="" />
                             <div className="project-actions">
@@ -54,10 +79,12 @@ function Projects() {
                     <Col>
                         <div className="project">
                             <div className="project-info">
-                                <h2>Tic Tac Toe</h2>
-                                <h5>React Native</h5>
+                                <h2>AI Project</h2>
+                                <img src={reactIcon} alt="ReactJS" title="ReactJS"/>
+                                <img src={openaiIcon} alt="OpenAI" title="OpenAI"/>
+                                <img src={fastapiIcon} alt="FastAPI" title="FastAPI"/>
                             </div>
-                            <img src={tictactoe} alt="" />
+                            <img src={spoilMe} alt="" />
                             <div className="project-actions">
                                 <Button href="https://github.com/JacobElbaz/tic-tac-toe" target="_blank" variant="outline-light">Repository</Button>
                             </div>
@@ -79,7 +106,12 @@ function Projects() {
                         <div className="project">
                             <div className="project-info">
                                 <h2>Social Network</h2>
-                                <h5>React Native</h5>
+                                <img src={typeScriptIcon} alt="TypeScript" title="TypeScript"/>
+                                <img src={reactIcon} alt="ReactJS" title="React Native"/>Native
+                                <img src={nodeIcon} alt="Node.js" title="Node.js"/>
+                                <img src={expressIcon} alt="express.js" title="express.js" style={{filter: 'invert(50%)'}}/>
+                                <img src={mongoIcon} alt="mongoDB" title="mongoDB"/>
+                                <img src={socketIcon} alt="Socket.io" title="Socket.io" style={{filter: 'invert(50%)'}}/>
                             </div>
                             <img src={komin} alt="" />
                             <div className="project-actions">

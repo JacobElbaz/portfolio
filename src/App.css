@@ -523,12 +523,18 @@ textarea#message {
   color: dimgray;
 }
 
+.project-info img {
+  width: 32px;
+  margin : 2px;
+  filter: grayscale(1);
+}
+
 .project:hover h2 {
   color: white;
   transition: all .2s ease-in-out;
 }
 
-.project img {
+.project> img {
   margin: auto;
   width: 300px;
   height: 270px;
@@ -538,7 +544,7 @@ textarea#message {
 }
 
 @media only screen and (max-width: 768px) {
-  .project img {
+  .project> img {
     filter: grayscale(0%);
     width: 35vh;
   }
@@ -549,6 +555,10 @@ textarea#message {
 
   .project {
     border-top: solid 5px #fa3838;
+  }
+
+  .project-info img {
+    filter: grayscale(0);
   }
 
   .reveal {
