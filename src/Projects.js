@@ -3,7 +3,6 @@ import fastopen from "./FastOpen.png";
 import komin from "./Komin.png";
 import shop from "./shop.jpg";
 import event from "./event.png";
-import tictactoe from "./tictactoe.png";
 import solvia from "./solvia.png";
 import reactIcon from './react-color.svg';
 import axiosIcon from './axios-color.svg';
@@ -17,7 +16,6 @@ import reduxIcon from './redux-color.svg';
 import socketIcon from './socketdotio-color.svg';
 import typeScriptIcon from './typescript-color.svg';
 import openaiIcon from './openai-color.svg';
-import fastapiIcon from './fastapi-color.svg';
 import spoilMe from './spoilme.png';
 
 function Projects() {
@@ -82,11 +80,10 @@ function Projects() {
                                 <h2>AI Project</h2>
                                 <img src={reactIcon} alt="ReactJS" title="ReactJS"/>
                                 <img src={openaiIcon} alt="OpenAI" title="OpenAI"/>
-                                <img src={fastapiIcon} alt="FastAPI" title="FastAPI"/>
                             </div>
                             <img src={spoilMe} alt="" />
                             <div className="project-actions">
-                                <Button href="https://github.com/JacobElbaz/tic-tac-toe" target="_blank" variant="outline-light">Repository</Button>
+                                <Button href="https://github.com/JacobElbaz/spoilme" target="_blank" variant="outline-light">Repository</Button>
                             </div>
                         </div>
                     </Col>
