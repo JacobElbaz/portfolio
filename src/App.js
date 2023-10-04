@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <div className="inner-header flex">
+        <div className="inner-header">
           <NavigationBar/>
           <Home />
           <About />
@@ -56,7 +56,7 @@ function App() {
           </svg>
         </div>
       </div>
-      <div className="content flex">
+      <div className="content">
         <Skills />
         <Projects />
         <Contact />

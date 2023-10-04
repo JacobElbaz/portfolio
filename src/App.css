@@ -223,11 +223,6 @@
   min-height: 90vh;
 }
 
-.about p {
-  line-height: 30px;
-  max-width: 750px;
-}
-
 .Buttons {
   margin: 30px 0;
   display: flex;
@@ -633,4 +628,45 @@ textarea#message {
   color: #bebebe;
   margin: 0;
   padding: 0;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 50px;
+}
+
+.blur-card {
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 5px;
+  padding: 16px;
+  max-width: 500px;
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  text-align: start;
+}
+
+.blur-card h2 {
+  margin-bottom: 18px;
+  font-weight: 600;
+  text-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.blur-card h3 {
+  margin-bottom: 0;
+  font-size: medium;
+  color: #9c9c9c;
+}
+
+.a-to-p {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.a-to-p:hover {
+  color: #5538fa;
+  text-shadow: 1px 2px 2px #222222;
 }
