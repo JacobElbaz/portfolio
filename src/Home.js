@@ -32,15 +32,17 @@ function Home() {
             href="https://www.linkedin.com/in/jacob-elbaz/"
             target="_blank"
             className="text-decoration-none"
+            rel="noreferrer"
           >
-            <img className="p_links" src={linkedin} />
+            <img className="p_links" src={linkedin} alt="linkedin-icon" />
           </a>
           <a
             href="https://github.com/JacobElbaz"
             target="_blank"
             className="text-decoration-none mx-3"
+            rel="noreferrer"
           >
-            <img className="p_links" src={github} />
+            <img className="p_links" src={github} alt="github-icon" />
           </a>
         </div>
       </motion.div>
@@ -53,6 +55,7 @@ function Home() {
           backgroundImage: `url(${fullBg})`,
           backgroundSize: "cover",
           y: backgroundY,
+          backgroundAttachment: "fixed",
         }}
       />
       <div
