@@ -11,7 +11,7 @@ function Home() {
     target: ref,
     offset: ["start start", "end start"],
   });
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "70%"]);
   const textY = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
   return (
     <div id="home" ref={ref}>
