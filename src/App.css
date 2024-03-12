@@ -3,10 +3,11 @@
 }
 
 #home {
-  background-image: url('./hero.jpg');
-  background-size: cover;
-  background-position: center;
+  width: 100%;
   height: 100vh;
+  overflow: hidden;
+  position: relative;
+  padding-block: 100px;
 }
 
 .navbar {
@@ -669,4 +670,12 @@ textarea#message {
 .a-to-p:hover {
   color: #5538fa;
   text-shadow: 1px 2px 2px #222222;
+}
+
+.hero-full-background {
+  background-image: url('./hero.jpg');
+}
+
+.hero-bottom-background {
+  background-image: url('./hero-bottom.png');
 }
