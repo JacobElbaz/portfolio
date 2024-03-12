@@ -2,6 +2,8 @@ import linkedin from "./linkedin.svg";
 import github from "./github.svg";
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import bottomBg from "./hero-bottom.png";
+import fullBg from "./hero.jpg";
 
 function Home() {
   const ref = React.useRef(null);
@@ -43,23 +45,23 @@ function Home() {
         </div>
       </motion.div>
       <motion.div
-        className="hero-full-background"
         style={{
           position: "absolute",
           inset: 0,
           zIndex: 0,
           backgroundPosition: "bottom",
+          backgroundImage: `url(${fullBg})`,
           backgroundSize: "cover",
           y: backgroundY,
         }}
       />
       <div
-        className="hero-bottom-background"
         style={{
           position: "absolute",
           inset: 0,
           zIndex: 20,
           backgroundPosition: "bottom",
+          backgroundImage: `url(${bottomBg})`,
           backgroundSize: "cover",
         }}
       />

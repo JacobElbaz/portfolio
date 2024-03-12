@@ -671,11 +671,3 @@ textarea#message {
   color: #5538fa;
   text-shadow: 1px 2px 2px #222222;
 }
-
-.hero-full-background {
-  background-image: url('./hero.jpg');
-}
-
-.hero-bottom-background {
-  background-image: url('./hero-bottom.png');
-}
