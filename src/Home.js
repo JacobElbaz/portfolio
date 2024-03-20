@@ -1,5 +1,3 @@
-import linkedin from "./linkedin.svg";
-import github from "./github.svg";
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import bottomBg from "./hero-bottom.png";
@@ -27,24 +25,6 @@ function Home() {
         </h1>
         <h2 style={{ color: "black" }}>Software Engineer</h2>
         <h2 style={{ color: "black" }}>FullStack Developer</h2>
-        <div>
-          <a
-            href="https://www.linkedin.com/in/jacob-elbaz/"
-            target="_blank"
-            className="text-decoration-none"
-            rel="noreferrer"
-          >
-            <img className="p_links" src={linkedin} alt="linkedin-icon" />
-          </a>
-          <a
-            href="https://github.com/JacobElbaz"
-            target="_blank"
-            className="text-decoration-none mx-3"
-            rel="noreferrer"
-          >
-            <img className="p_links" src={github} alt="github-icon" />
-          </a>
-        </div>
       </motion.div>
       <motion.div
         style={{

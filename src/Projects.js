@@ -17,6 +17,7 @@ import socketIcon from './socketdotio-color.svg';
 import typeScriptIcon from './typescript-color.svg';
 import openaiIcon from './openai-color.svg';
 import spoilMe from './spoilme.png';
+import pokemon from './pokemon-rankers.png';
 
 function Projects() {
     return (
@@ -29,7 +30,6 @@ function Projects() {
                             <div className="project-info">
                                 <h2>Landing Page</h2>
                                 <img src={reactIcon} alt="ReactJS" title="ReactJS"/>
-                                <img src={reactRouterIcon} alt="React Router" title="React Router"/>
                                 <img src={muiIcon} alt="MaterialUI" title="Material UI"/>
                             </div>
                             <img src={solvia} alt="" />
@@ -45,13 +45,12 @@ function Projects() {
                                 <h2>Video Games Store</h2>
                                 <img src={reactIcon} alt="ReactJS" title="ReactJS"/>
                                 <img src={reduxIcon} alt="Redux" title="Redux"/>
-                                <img src={reactRouterIcon} alt="React Router" title="React Router"/>
                                 <img src={axiosIcon} alt="Axios" title="Axios"/>
                                 <img src={nodeIcon} alt="Node.js" title="Node.js"/>
                                 <img src={expressIcon} alt="express.js" title="express.js" style={{filter: 'invert(50%)'}}/>
                                 <img src={mongoIcon} alt="mongoDB" title="mongoDB"/>
                             </div>
-                            <img src={shop} alt="" />
+                            <img src={shop} alt="shop-img" />
                             <div className="project-actions">
                                 <Button href="https://github.com/JacobElbaz/e-Shop" target="_blank" variant="outline-light">Repository</Button>
                                 <Button href="https://game-zone-eshop.netlify.app/" target="_blank" variant="outline-light">Website</Button>
@@ -67,7 +66,7 @@ function Projects() {
                                 <img src={expressIcon} alt="express.js" title="express.js" style={{filter: 'invert(50%)'}}/>
                                 <img src={mongoIcon} alt="mongoDB" title="mongoDB"/>
                             </div>
-                            <img src={event} alt="" />
+                            <img src={event} alt="event-img" />
                             <div className="project-actions">
                                 <Button href="https://github.com/JacobElbaz/event-website" target="_blank" variant="outline-light">Repository</Button>
                                 <Button href="https://event-react-frontend.netlify.app/" target="_blank" variant="outline-light">Website</Button>
@@ -81,7 +80,7 @@ function Projects() {
                                 <img src={reactIcon} alt="ReactJS" title="ReactJS"/>
                                 <img src={openaiIcon} alt="OpenAI" title="OpenAI"/>
                             </div>
-                            <img src={spoilMe} alt="" />
+                            <img src={spoilMe} alt="ai-project-img" style={{objectFit: "contain"}}/>
                             <div className="project-actions">
                                 <Button href="https://github.com/JacobElbaz/spoilme" target="_blank" variant="outline-light">Repository</Button>
                             </div>
@@ -90,12 +89,15 @@ function Projects() {
                     <Col>
                         <div className="project">
                             <div className="project-info">
-                                <h2>Chrome Extension</h2>
-                                <h5>ReactJS</h5>
+                                <h2>Pokemon Ranking</h2>
+                                <img src={reactIcon} alt="ReactJS" title="ReactJS"/>
+                                <img src={nodeIcon} alt="Node.js" title="Node.js"/>
+                                <img src={expressIcon} alt="express.js" title="express.js" style={{filter: 'invert(50%)'}}/>
+                                <img src={mongoIcon} alt="mongoDB" title="mongoDB"/>
                             </div>
-                            <img src={fastopen} alt="" />
+                            <img src={pokemon} alt="pokemon-rankers-img" style={{objectFit: "contain"}} />
                             <div className="project-actions">
-                                <Button href="https://github.com/JacobElbaz/react-extension" target="_blank" variant="outline-light">Repository</Button>
+                                <Button href="https://github.com/JacobElbaz/pokemon-rankers" target="_blank" variant="outline-light">Repository</Button>
                             </div>
                         </div>
                     </Col>
@@ -110,7 +112,7 @@ function Projects() {
                                 <img src={mongoIcon} alt="mongoDB" title="mongoDB"/>
                                 <img src={socketIcon} alt="Socket.io" title="Socket.io" style={{filter: 'invert(50%)'}}/>
                             </div>
-                            <img src={komin} alt="" />
+                            <img src={komin} alt="komin-img" />
                             <div className="project-actions">
                                 <Button href="https://github.com/JacobElbaz/komin" target="_blank" variant="outline-light">Repository</Button>
                             </div>

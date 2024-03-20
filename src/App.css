@@ -235,7 +235,7 @@
 }
 
 .p_links:hover {
-  transform: translateY(5px);
+  transform: scale(1.1);
 }
 
 .btn-grad {
