@@ -98,6 +98,7 @@ function Projects() {
                             <img src={pokemon} alt="pokemon-rankers-img" style={{objectFit: "contain"}} />
                             <div className="project-actions">
                                 <Button href="https://github.com/JacobElbaz/pokemon-rankers" target="_blank" variant="outline-light">Repository</Button>
+                                <Button href="https://pokemon-rankers.vercel.app/" target="_blank" variant="outline-light">Website</Button>
                             </div>
                         </div>
                     </Col>
