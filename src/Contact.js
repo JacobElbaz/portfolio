@@ -2,6 +2,7 @@ import { Container } from "react-bootstrap";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import ChatBot from "./ChatBot";
+import toast, { Toaster } from "react-hot-toast";
 
 function Contact() {
     const form = useRef();
@@ -19,9 +20,9 @@ function Contact() {
                 emailRef.current.value = null;
                 messageRef.current.value = null;
                 setLoading(false);
-                alert("Message Sent , I will get back to you shortly", result.text);
+                toast.success("Message Sent , I will get back to you shortly!");
             }, (error) => {
-                alert("An error occurred, Please try again", error.text);
+                toast.error("An error occurred, Please try again later.");
                 setLoading(false);
             });
     };
@@ -52,6 +53,7 @@ function Contact() {
                     <input type="submit" value={loading ? 'sending...' : 'send'} className="btn-grad" disabled={loading}/>
                 </form>
             </Container>
+            <Toaster/>
         </div>
     )
 }
