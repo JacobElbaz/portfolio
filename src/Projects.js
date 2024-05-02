@@ -5,7 +5,7 @@ import event from "./event.png";
 import solvia from "./solvia.png";
 import spoilMe from "./spoilme.png";
 import pokemon from "./pokemon-rankers.png";
-import { Chip } from "@mui/material";
+import Chip from "./Chip";
 
 function Projects() {
   return (
@@ -18,10 +18,12 @@ function Projects() {
               <img src={solvia} alt="" />
               <div className="project-info">
                 <h2>Landing Page</h2>
-                <Chip label="React" />
-                <Chip label="MaterialUI" />
-                <Chip label="SEO" />
-                <Chip label="Framer Motion" />
+                <div style={{ display: "flex", flexWrap: "wrap" }}>
+                  <Chip label="React" />
+                  <Chip label="MaterialUI" />
+                  <Chip label="SEO" />
+                  <Chip label="Framer Motion" />
+                </div>
               </div>
               <div className="project-actions">
                 <Button
@@ -46,11 +48,13 @@ function Projects() {
               <img src={shop} alt="shop-img" />
               <div className="project-info">
                 <h2>Video Games Store</h2>
-                <Chip label="React" />
-                <Chip label="Redux" />
-                <Chip label="Node.js" />
-                <Chip label="Express.js" />
-                <Chip label="MongoDB" />
+                <div style={{ display: "flex", flexWrap: "wrap" }}>
+                  <Chip label="React" />
+                  <Chip label="Redux" />
+                  <Chip label="Node.js" />
+                  <Chip label="Express.js" />
+                  <Chip label="MongoDB" />
+                </div>
               </div>
               <div className="project-actions">
                 <Button
@@ -75,10 +79,12 @@ function Projects() {
               <img src={event} alt="event-img" />
               <div className="project-info">
                 <h2>Event Website</h2>
-                <Chip label="React" />
-                <Chip label="Node.js" />
-                <Chip label="Express.js" />
-                <Chip label="MongoDB" />
+                <div style={{ display: "flex", flexWrap: "wrap" }}>
+                  <Chip label="React" />
+                  <Chip label="Node.js" />
+                  <Chip label="Express.js" />
+                  <Chip label="MongoDB" />
+                </div>
               </div>
               <div className="project-actions">
                 <Button
@@ -107,10 +113,12 @@ function Projects() {
               />
               <div className="project-info">
                 <h2>AI Project</h2>
-                <Chip label="React" />
-                <Chip label="OpenAI" />
-                <Chip label="Fine Tuning" />
-                <Chip label="AI" />
+                <div style={{ display: "flex", flexWrap: "wrap" }}>
+                  <Chip label="React" />
+                  <Chip label="OpenAI" />
+                  <Chip label="Fine Tuning" />
+                  <Chip label="AI" />
+                </div>
               </div>
               <div className="project-actions">
                 <Button
@@ -132,10 +140,12 @@ function Projects() {
               />
               <div className="project-info">
                 <h2>Pokemon Ranking</h2>
-                <Chip label="React" />
-                <Chip label="Node.js" />
-                <Chip label="Express.js" />
-                <Chip label="MongoDB" />
+                <div style={{ display: "flex", flexWrap: "wrap" }}>
+                  <Chip label="React" />
+                  <Chip label="Node.js" />
+                  <Chip label="Express.js" />
+                  <Chip label="MongoDB" />
+                </div>
               </div>
 
               <div className="project-actions">
@@ -161,7 +171,7 @@ function Projects() {
               <img src={komin} alt="komin-img" />
               <div className="project-info">
                 <h2>Social Network</h2>
-                <div>
+                <div style={{ display: "flex", flexWrap: "wrap" }}>
                   <Chip label="TypeScript" />
                   <Chip label="React Native" />
                   <Chip label="Node.js" />
