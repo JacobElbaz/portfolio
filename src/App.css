@@ -14,6 +14,17 @@
   transition: background-color 0.3s ease-in-out; /* Ajustez la durée et l'effet selon vos préférences */
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* Affiche les éléments sur une seule colonne */
+  }
+}
+
 .button-30 {
   align-items: center;
   appearance: none;
@@ -218,7 +229,6 @@
   align-items: center;
   align-content: space-around;
   color: white;
-  font-size: large;
   padding-inline: 10px;
   padding-block: 100px;
   min-height: 90vh;

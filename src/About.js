@@ -1,9 +1,92 @@
 import CV from "./Jacob Elbaz CV.pdf";
+import profil from "./profilepic.jpg";
 
 function About() {
   return (
     <div className="about" id="about">
-      <h1 style={{ color: "black", fontWeight: "600" }}>About me</h1>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          color: "white",
+          borderRadius: "1rem",
+          minHeight: "400px",
+          width: "100%",
+          marginBlock: "2rem",
+          gap: "3rem",
+          justifyContent: "center",
+        }}
+      >
+        <img
+          src={profil}
+          alt="profilpic"
+          style={{
+            borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70% ",
+            maxHeight: "300px",
+          }}
+        />
+        <div style={{ textAlign: "left", maxWidth: "1000px" }}>
+          <h1 style={{ color: "white", fontWeight: "600" }}> Hey there 👋</h1>
+          <p>
+            I'm <strong>Jacob Elbaz</strong>, a{" "}
+            <strong>software engineer</strong> with roots in both{" "}
+            <strong>Israel</strong> and <strong>France</strong>. My whole gig is
+            about taking cool <strong>ideas</strong> and making them real.
+          </p>
+          <p>
+            I graduated from <strong>Sami Shamoon College</strong> in{" "}
+            <strong>Israel</strong> in <strong>2023</strong> with a{" "}
+            <strong>Bachelor of Science</strong> in{" "}
+            <strong>Software Engineering</strong>, pulling off a decent{" "}
+            <strong>GPA</strong> of <strong>86.6</strong>.{" "}
+          </p>{" "}
+          <p>
+            {" "}
+            For the last <strong>three years</strong>, I've been doing my own
+            thing as a self-employed <strong>Fullstack developer</strong> at{" "}
+            <strong>UNIQ Web</strong>. I whip up custom{" "}
+            <strong>web solutions</strong>, from simple pages to fancy-pants{" "}
+            <strong>SaaS apps</strong>.
+          </p>
+          <p>
+            When I'm not knee-deep in code, you can find me diving into{" "}
+            <strong>video games</strong>, or just geeking out over whatever's
+            new and shiny in the world of <strong>technology</strong>.
+          </p>
+          <hr />
+          <div className="grid">
+            <div>
+              <div style={{ display: "flex", gap: "5px" }}>
+                <ion-icon name="person-outline"></ion-icon>
+                <h6>NAME</h6>
+              </div>
+              <p style={{ opacity: ".6" }}>Jacob ELBAZ</p>
+            </div>
+            <div>
+              <div style={{ display: "flex", gap: "5px" }}>
+                <ion-icon name="location-outline"></ion-icon>
+                <h6>LOCATION</h6>
+              </div>
+              <p style={{ opacity: ".6" }}>Ashdod, ISRAEL</p>
+            </div>
+            <div>
+              <div style={{ display: "flex", gap: "5px" }}>
+                <ion-icon name="mail-outline"></ion-icon>
+                <h6>EMAIL</h6>
+              </div>
+              <p style={{ opacity: ".6" }}>jacobelbz@gmail.com</p>
+            </div>
+            <div>
+              <div style={{ display: "flex", gap: "5px" }}>
+                <ion-icon name="briefcase-outline"></ion-icon>
+                <h6>EMPLOYMENT</h6>
+              </div>
+              <p style={{ opacity: ".6" }}>Self-employed @ Uniq Web</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/*
       <div className="flex">
         <div className="blur-card">
           <h2>Bio</h2>
@@ -30,8 +113,10 @@ function About() {
             </div>
             <div>
               <h3>Description</h3>
-              <p>Enthusiastic and driven software engineer with a strong
-        aptitude for rapid learning.</p>
+              <p>
+                Enthusiastic and driven software engineer with a strong aptitude
+                for rapid learning.
+              </p>
             </div>
           </div>
         </div>
@@ -51,7 +136,14 @@ function About() {
         <div className="blur-card">
           <h2>Experience</h2>
           <h3>Company</h3>
-          <a href="https://uniq-iota.vercel.app/" title="Link to UNIQ website" className="a-to-p" target="blank">UNIQ Web</a>
+          <a
+            href="https://uniq-iota.vercel.app/"
+            title="Link to UNIQ website"
+            className="a-to-p"
+            target="blank"
+          >
+            UNIQ Web
+          </a>
           <h3>Role</h3>
           <p>Founder & Full-Stack developer</p>
           <h3>Description</h3>
@@ -74,7 +166,7 @@ function About() {
         <a href="#contact" style={{ textDecoration: "none" }}>
           <button className="button-30">Contact me</button>
         </a>
-      </div>
+      </div>*/}
     </div>
   );
 }
