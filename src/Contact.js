@@ -1,4 +1,3 @@
-import { Container } from "react-bootstrap";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import ChatBot from "./ChatBot";

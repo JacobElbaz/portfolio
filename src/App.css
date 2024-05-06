@@ -241,6 +241,7 @@
   padding-inline: 10px;
   padding-block: 100px;
   min-height: 90vh;
+  overflow-x: hidden;
 }
 
 .Buttons {
@@ -327,7 +328,7 @@
   border-top-color: #5538fa;
   padding: 15px;
   margin: 10px;
-  transition: all .4s ease;
+  transition: background .4s ease;
   min-width: 300px;
   flex: 1;
 }
@@ -537,7 +538,7 @@ textarea#message {
   flex-direction: column;
   overflow: hidden;
   background-color: #222222;
-  transition: all .2s ease-in-out;
+  transition: border-top-color .2s ease-in-out;
 }
 
 .project:hover {
@@ -593,17 +594,6 @@ textarea#message {
 
   .project-info img {
     filter: grayscale(0);
-  }
-
-  .reveal {
-    transform: translateY(100px);
-    opacity: .4;
-    transition: .6s;
-  }
-
-  .reveal.active {
-    transform: translateY(0);
-    opacity: 1;
   }
 }
 

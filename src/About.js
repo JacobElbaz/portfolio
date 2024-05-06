@@ -1,5 +1,5 @@
-import CV from "./Jacob Elbaz CV.pdf";
 import profil from "./profilepic.jpg";
+import { motion } from "framer-motion";
 
 function About() {
   return (
@@ -17,7 +17,13 @@ function About() {
           justifyContent: "center",
         }}
       >
-        <img
+        <motion.img
+          initial={{ opacity: 0, x: -100 }}
+          whileHover={{
+            scale: 1.1,
+            borderRadius: "69% 31% 30% 70% / 56% 62% 38% 44% ",
+          }}
+          whileInView={{ opacity: 1, x: 0 }}
           src={profil}
           alt="profilpic"
           style={{
@@ -25,7 +31,11 @@ function About() {
             maxHeight: "300px",
           }}
         />
-        <div style={{ textAlign: "left", maxWidth: "1000px" }}>
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2 } }}
+          style={{ textAlign: "left", maxWidth: "1000px" }}
+        >
           <h1 style={{ color: "white", fontWeight: "600" }}> Hey there 👋</h1>
           <p>
             I'm <strong>Jacob Elbaz</strong>, a{" "}
@@ -84,7 +94,7 @@ function About() {
               <p style={{ opacity: ".6" }}>Self-employed @ Uniq Web</p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       {/*
       <div className="flex">

@@ -1,4 +1,5 @@
 import "./App.css";
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDatabase,
@@ -10,24 +11,24 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import typescript from "./typescript-color.svg";
-import node from './node.svg';
-import react from './react.svg';
-import cSharp from './c-sharp.svg';
-import dotNet from './dotnet.svg';
-import java from './java.svg';
-import mongoDB from './mongodb.svg';
-import postgreSQL from './postgresql.svg';
-import javascript from './javascript.svg';
-import html from './html.svg';
-import css from './css.svg';
-import bootstrap from './bootstrap.svg';
-import tailwind from './tailwind.svg';
-import linux from './linux.svg';
-import designPatterns from './design-patterns.svg';
-import python from './python.svg';
-import next from './next-js.svg';
-import aws from './aws.svg';
-import azure from './azure.svg';
+import node from "./node.svg";
+import react from "./react.svg";
+import cSharp from "./c-sharp.svg";
+import dotNet from "./dotnet.svg";
+import java from "./java.svg";
+import mongoDB from "./mongodb.svg";
+import postgreSQL from "./postgresql.svg";
+import javascript from "./javascript.svg";
+import html from "./html.svg";
+import css from "./css.svg";
+import bootstrap from "./bootstrap.svg";
+import tailwind from "./tailwind.svg";
+import linux from "./linux.svg";
+import designPatterns from "./design-patterns.svg";
+import python from "./python.svg";
+import next from "./next-js.svg";
+import aws from "./aws.svg";
+import azure from "./azure.svg";
 
 function Skills() {
   const reveal = () => {
@@ -48,7 +49,11 @@ function Skills() {
     <div className="Skills-container">
       <h1 style={{ marginTop: "50px" }}>Skills</h1>
       <div className="skills">
-        <div className="skill reveal">
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="skill"
+        >
           <h2>
             <FontAwesomeIcon icon={faServer} />
           </h2>
@@ -80,8 +85,12 @@ function Skills() {
               <img src={postgreSQL} alt="" /> PostgreSQL
             </p>
           </div>
-        </div>
-        <div className="skill reveal">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="skill"
+        >
           <h2>
             <FontAwesomeIcon icon={faDisplay} />
           </h2>
@@ -92,7 +101,7 @@ function Skills() {
               <img src={javascript} alt="" /> JavaScript
             </p>
             <p>
-                <img src={typescript} alt="" /> TypeScript
+              <img src={typescript} alt="" /> TypeScript
             </p>
             <p>
               <img src={react} alt="" /> React
@@ -113,8 +122,12 @@ function Skills() {
               <img src={tailwind} alt="" /> Tailwind
             </p>
           </div>
-        </div>
-        <div className="skill reveal">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="skill"
+        >
           <h2>
             <FontAwesomeIcon icon={faEllipsis} />
           </h2>
@@ -140,7 +153,7 @@ function Skills() {
               <img src={azure} alt="" /> Azure
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

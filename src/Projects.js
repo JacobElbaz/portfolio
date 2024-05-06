@@ -1,4 +1,4 @@
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import komin from "./Komin.png";
 import shop from "./gamezone.png";
 import event from "./wedding.png";
@@ -6,13 +6,18 @@ import solvia from "./solvia-energie.png";
 import spoilMe from "./spoilme.png";
 import pokemon from "./pokemon-rankers.png";
 import Chip from "./Chip";
+import { motion } from "framer-motion";
 
 function Projects() {
   return (
     <div className="Projects" id="projects">
       <h1 className="mb-5">My projects</h1>
       <div className="projects-container">
-        <div className="project">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          className="project"
+        >
           <img src={solvia} alt="" />
           <div className="project-info">
             <h2>Company Website</h2>
@@ -61,8 +66,11 @@ function Projects() {
               </div>
             </Button>
           </div>
-        </div>
-        <div className="project">
+        </motion.div>
+        <motion.div 
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        className="project">
           <img
             src={pokemon}
             alt="pokemon-rankers-img"
@@ -115,8 +123,11 @@ function Projects() {
               </div>
             </Button>
           </div>
-        </div>
-        <div className="project">
+        </motion.div>
+        <motion.div 
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        className="project">
           <img src={shop} alt="shop-img" />
           <div className="project-info">
             <h2>Game Zone</h2>
@@ -168,8 +179,11 @@ function Projects() {
               </div>
             </Button>
           </div>
-        </div>
-        <div className="project">
+        </motion.div>
+        <motion.div 
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        className="project">
           <img src={event} alt="event-img" />
           <div className="project-info">
             <h2>Event App</h2>
@@ -219,8 +233,11 @@ function Projects() {
               </div>
             </Button>
           </div>
-        </div>
-        <div className="project">
+        </motion.div>
+        <motion.div 
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        className="project">
           <img
             src={spoilMe}
             alt="ai-project-img"
@@ -259,8 +276,11 @@ function Projects() {
               </div>
             </Button>
           </div>
-        </div>
-        <div className="project">
+        </motion.div>
+        <motion.div 
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        className="project">
           <img src={komin} alt="komin-img" />
           <div className="project-info">
             <h2>Komin</h2>
@@ -296,7 +316,7 @@ function Projects() {
               </div>
             </Button>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="Buttons">
         <a
