@@ -9,8 +9,7 @@ function Home() {
     target: ref,
     offset: ["start start", "end start"],
   });
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "70%"]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "300%"]);
   return (
     <div id="home" ref={ref}>
       <motion.div style={{ zIndex: 10, position: "relative", y: textY }}>
@@ -26,7 +25,7 @@ function Home() {
         <h2 style={{ color: "black" }}>Software Engineer</h2>
         <h2 style={{ color: "black" }}>FullStack Developer</h2>
       </motion.div>
-      <motion.div
+      <div
         style={{
           position: "absolute",
           inset: 0,
@@ -34,7 +33,6 @@ function Home() {
           backgroundPosition: "bottom",
           backgroundImage: `url(${fullBg})`,
           backgroundSize: "cover",
-          y: backgroundY,
           backgroundAttachment: "fixed",
         }}
       />
