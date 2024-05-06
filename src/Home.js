@@ -12,7 +12,7 @@ function Home() {
   const textY = useTransform(scrollYProgress, [0, 1], ["0%", "300%"]);
   return (
     <div id="home" ref={ref}>
-      <motion.div style={{ zIndex: 10, position: "relative", y: textY }}>
+      <motion.div style={{ zIndex: 1, position: "relative", y: textY }}>
         <p style={{ margin: "0", color: "black", fontWeight: "bold" }}>
           Hi, I'm
         </p>
@@ -34,13 +34,14 @@ function Home() {
           backgroundImage: `url(${fullBg})`,
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
+          height: '100vh'
         }}
       />
       <div
         style={{
           position: "absolute",
           inset: 0,
-          zIndex: 20,
+          zIndex: 2,
           backgroundPosition: "bottom",
           backgroundImage: `url(${bottomBg})`,
           backgroundSize: "cover",
