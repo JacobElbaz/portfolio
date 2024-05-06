@@ -314,7 +314,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  margin-inline: 1rem;
 }
 
 .skill {
@@ -328,7 +328,7 @@
   padding: 15px;
   margin: 10px;
   transition: all .4s ease;
-  min-width: 150px;
+  min-width: 300px;
   flex: 1;
 }
 
@@ -340,14 +340,33 @@ h1 {
   color: white;
 }
 
+.p-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .skill p {
   color: dimgray;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: .5rem 1rem;
+  margin: 0;
+}
+
+.skill:hover p {
+  color: white;
+}
+
+.skill p:hover {
+  background-color: white;
+  color: dimgray;
+  cursor: pointer;
 }
 
 .skill p img {
   width: 20px;
-  background-color: #7caef3;
-  border-radius: 50%;
 }
 
 .skill:hover {
@@ -355,9 +374,7 @@ h1 {
   background-position: top;
 }
 
-.skill:hover p {
-  color: white;
-}
+
 
 .skill:hover h2 {
   color: #191919;
@@ -381,7 +398,7 @@ h1 {
 .Contact {
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(14, 14, 14, 1) 20%, rgba(25, 25, 25, 1) 100%);
-  padding-inline: 15px;
+  padding-inline: 1rem;
   padding-block: 100px;
 }
 
@@ -524,7 +541,7 @@ textarea#message {
 }
 
 .project:hover {
-  border-top-color: #fa3838;
+  border-top-color: #5538fa;
 }
 
 .project-actions {
@@ -571,7 +588,7 @@ textarea#message {
   }
 
   .project {
-    border-top: solid 5px #fa3838;
+    border-top: solid 5px #5538fa;
   }
 
   .project-info img {
@@ -610,7 +627,6 @@ textarea#message {
   background-color: #222222;
   padding: 15px;
   border-radius: 5px;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
 }
 
 .chatbot img {

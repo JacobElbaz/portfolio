@@ -29,7 +29,7 @@ function Contact() {
 
     return (
         <div className="Contact">
-            <Container>
+            <div>
                 <ChatBot />
                 <div style={{paddingTop: '100px'}} id="contact">
                     <h1>Contact me</h1>
@@ -52,7 +52,7 @@ function Contact() {
                     <textarea ref={messageRef} name="message" id="message" placeholder="Write your message" required />
                     <input type="submit" value={loading ? 'sending...' : 'send'} className="btn-grad" disabled={loading}/>
                 </form>
-            </Container>
+            </div>
             <Toaster/>
         </div>
     )
