@@ -33,8 +33,6 @@ function Home() {
           backgroundPosition: "bottom",
           backgroundImage: `url(${fullBg})`,
           backgroundSize: "cover",
-          backgroundAttachment: "fixed",
-          height: '100vh'
         }}
       />
       <div
