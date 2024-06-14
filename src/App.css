@@ -302,6 +302,10 @@
   color: aquamarine;
 }
 
+.content {
+  background-color: #191919;
+}
+
 .Skills-container {
   min-height: 100vh;
   background-color: #191919;
@@ -309,6 +313,8 @@
   flex-direction: column;
   justify-content: center;
   gap: 100px;
+  max-width: 1240px;
+  margin-inline: auto;
 }
 
 .skills {

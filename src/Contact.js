@@ -28,7 +28,7 @@ function Contact() {
 
     return (
         <div className="Contact">
-            <div>
+            <div style={{maxWidth: '1240px', marginInline: 'auto'}}>
                 <ChatBot />
                 <div style={{paddingTop: '100px'}} id="contact">
                     <h1>Contact me</h1>
