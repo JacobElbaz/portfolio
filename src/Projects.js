@@ -5,6 +5,8 @@ import event from "./wedding.png";
 import solvia from "./solvia-energie.png";
 import spoilMe from "./spoilme.png";
 import pokemon from "./pokemon-rankers.png";
+import hyperplatform from "./hyperdentaire.png";
+import obsidian from "./obsidian.png";
 import Chip from "./Chip";
 import { motion } from "framer-motion";
 
@@ -67,10 +69,126 @@ function Projects() {
             </Button>
           </div>
         </motion.div>
-        <motion.div 
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        className="project">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          className="project"
+        >
+          <img src={hyperplatform} alt="" />
+          <div className="project-info">
+            <h2>HyperPlatform</h2>
+            <div style={{ textAlign: "left", fontSize: "small" }}>
+              <p>
+                Comprehensive ordering and tracking platform tailored for a
+                dental laboratory. This platform offers dentists an intuitive
+                interface to place orders and access all relevant information.
+              </p>
+            </div>
+            <div style={{ display: "flex", flexWrap: "wrap" }}>
+              <Chip label="React" />
+              <Chip label="MaterialUI" />
+              <Chip label="Next.js" />
+              <Chip label="ASP.NET" />
+            </div>
+          </div>
+          <div className="project-actions">
+            <Button
+              href="https://github.com/JacobElbaz/hyperdentaire"
+              target="_blank"
+              variant="outline-light"
+              disabled
+            >
+              <div
+                style={{ display: "flex", alignItems: "center", gap: "10px" }}
+              >
+                <ion-icon
+                  name="logo-github"
+                  style={{ fontSize: "22px" }}
+                ></ion-icon>
+                Code
+              </div>
+            </Button>
+            <Button
+              href="https://hyperdentaire.vercel.app/new-record"
+              target="_blank"
+              variant="light"
+            >
+              <div
+                style={{ display: "flex", alignItems: "center", gap: "10px" }}
+              >
+                <ion-icon
+                  name="open-outline"
+                  style={{ fontSize: "22px" }}
+                ></ion-icon>
+                Live Demo
+              </div>
+            </Button>
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          className="project"
+        >
+          <img src={obsidian} alt="" />
+          <div className="project-info">
+            <h2>Client Portal / Micro-CRM</h2>
+            <div style={{ textAlign: "left", fontSize: "small" }}>
+              <p>
+                Enables customers to track their administrative
+                processes with the company and access necessary documents, while
+                allowing the manager to view each case, download documents, and
+                update their statuses.
+              </p>
+            </div>
+            <div style={{ display: "flex", flexWrap: "wrap" }}>
+              <Chip label="React" />
+              <Chip label="MaterialUI" />
+              <Chip label="Next.js" />
+              <Chip label="Node.js" />
+              <Chip label="Express" />
+              <Chip label="MongoDB" />
+            </div>
+          </div>
+          <div className="project-actions">
+            <Button
+              href="https://github.com/JacobElbaz/obsidian"
+              target="_blank"
+              variant="outline-light"
+              disabled
+            >
+              <div
+                style={{ display: "flex", alignItems: "center", gap: "10px" }}
+              >
+                <ion-icon
+                  name="logo-github"
+                  style={{ fontSize: "22px" }}
+                ></ion-icon>
+                Code
+              </div>
+            </Button>
+            <Button
+              href="https://obsidian-seven-pi.vercel.app/connexion"
+              target="_blank"
+              variant="light"
+            >
+              <div
+                style={{ display: "flex", alignItems: "center", gap: "10px" }}
+              >
+                <ion-icon
+                  name="open-outline"
+                  style={{ fontSize: "22px" }}
+                ></ion-icon>
+                Live Demo
+              </div>
+            </Button>
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          className="project"
+        >
           <img
             src={pokemon}
             alt="pokemon-rankers-img"
@@ -124,10 +242,11 @@ function Projects() {
             </Button>
           </div>
         </motion.div>
-        <motion.div 
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        className="project">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          className="project"
+        >
           <img src={shop} alt="shop-img" />
           <div className="project-info">
             <h2>Game Zone</h2>
@@ -180,10 +299,11 @@ function Projects() {
             </Button>
           </div>
         </motion.div>
-        <motion.div 
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        className="project">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          className="project"
+        >
           <img src={event} alt="event-img" />
           <div className="project-info">
             <h2>Event App</h2>
@@ -234,10 +354,11 @@ function Projects() {
             </Button>
           </div>
         </motion.div>
-        <motion.div 
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        className="project">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          className="project"
+        >
           <img
             src={spoilMe}
             alt="ai-project-img"
@@ -277,10 +398,11 @@ function Projects() {
             </Button>
           </div>
         </motion.div>
-        <motion.div 
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        className="project">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          className="project"
+        >
           <img src={komin} alt="komin-img" />
           <div className="project-info">
             <h2>Komin</h2>
