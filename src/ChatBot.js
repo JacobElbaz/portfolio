@@ -2,7 +2,10 @@ import React from "react";
 import { Configuration, OpenAIApi } from "openai";
 import { CircularProgress, Popover } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faQuestionCircle } from "@fortawesome/free-regular-svg-icons";
+import {
+  faQuestionCircle,
+  faPaperPlane,
+} from "@fortawesome/free-regular-svg-icons";
 import r2d2 from "./r2d2.png";
 
 export default function ChatBot() {
@@ -12,7 +15,7 @@ export default function ChatBot() {
   delete configuration.baseOptions.headers["User-Agent"];
   const openai = new OpenAIApi(configuration);
   const [output, setOutput] = React.useState("The response will appear here");
-  const [prompt, setPrompt] = React.useState();
+  const [prompt, setPrompt] = React.useState("");
   const [loading, setLoading] = React.useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -29,26 +32,45 @@ export default function ChatBot() {
     setPrompt(e.target.value);
   };
   const handleKeyDown = (e) => {
-    if (e.key == "Enter") {
+    if (e.key === "Enter") {
       handleSend();
     }
   };
   const handleSend = async () => {
+    if (!process.env.REACT_APP_OPENAI_API_KEY) {
+      console.error("API key is missing");
+      setOutput("API key is missing");
+      return;
+    }
+
+    const processPrompt = process.env.REACT_APP_PRE_PROCESS_PROMPT || "";
+
+    if (!prompt || prompt.trim() === "") {
+      setOutput("Please enter a question.");
+      return;
+    }
+
     setLoading(true);
     try {
       const response = await openai.createCompletion({
-        model: "gpt-4o-mini",
-        prompt: process.env.REACT_APP_PRE_PROCESS_PROMPT + prompt,
+        model: "gpt-3.5-turbo",
+        prompt: processPrompt + prompt,
         temperature: 0.5,
         max_tokens: 100,
       });
       setOutput(response.data.choices[0].text);
     } catch (err) {
+      if (err.response && err.response.status === 429) {
+        setOutput("Rate limit exceeded. Please try again later.");
+      } else {
+        setOutput("An error occurred.");
+      }
       console.log(err);
-      setOutput("Error");
     }
     setLoading(false);
+    setPrompt(""); // Clear input after sending
   };
+
   return (
     <div className="chatbot">
       <div className="info" id={id} onClick={handleClick}>
@@ -60,12 +82,13 @@ export default function ChatBot() {
       <div className="gpt">
         <input
           type="text"
+          value={prompt} // Controlled input
           onChange={handlePrompt}
           onKeyDown={handleKeyDown}
           placeholder="Your Question"
         />
         <button onClick={handleSend}>
-          <ion-icon name="send"></ion-icon>
+          <FontAwesomeIcon icon={faPaperPlane} />
         </button>
       </div>
       <div className="output">
@@ -84,9 +107,17 @@ export default function ChatBot() {
           vertical: "top",
           horizontal: "right",
         }}
-        PaperProps={{sx: {backgroundColor: 'rgba(0,0,0,0.9)', maxWidth: '300px'}}}
+        PaperProps={{
+          sx: { backgroundColor: "rgba(0,0,0,0.9)", maxWidth: "300px" },
+        }}
       >
-       <p style={{color: '#bebebe', padding: '15px'}}>Meet my virtual alter ego, the result of merging my identity with OpenAI's prowess. By channeling a wealth of personal information through the OpenAI API, I've harnessed the ability to have it answer your questions about me. Get ready to explore and enjoy insightful conversations about my life and interests!</p>
+        <p style={{ color: "#bebebe", padding: "15px" }}>
+          Meet my virtual alter ego, the result of merging my identity with
+          OpenAI's prowess. By channeling a wealth of personal information
+          through the OpenAI API, I've harnessed the ability to have it answer
+          your questions about me. Get ready to explore and enjoy insightful
+          conversations about my life and interests!
+        </p>
       </Popover>
     </div>
   );
