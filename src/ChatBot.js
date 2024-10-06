@@ -37,7 +37,7 @@ export default function ChatBot() {
     setLoading(true);
     try {
       const response = await openai.createCompletion({
-        model: "gpt-3.5-turbo-instruct",
+        model: "gpt-4o-mini",
         prompt: process.env.REACT_APP_PRE_PROCESS_PROMPT + prompt,
         temperature: 0.5,
         max_tokens: 100,

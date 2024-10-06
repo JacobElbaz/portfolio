@@ -135,10 +135,10 @@ function Projects() {
             <h2>Client Portal / Micro-CRM</h2>
             <div style={{ textAlign: "left", fontSize: "small" }}>
               <p>
-                Enables customers to track their administrative
-                processes with the company and access necessary documents, while
-                allowing the manager to view each case, download documents, and
-                update their statuses.
+                Enables customers to track their administrative processes with
+                the company and access necessary documents, while allowing the
+                manager to view each case, download documents, and update their
+                statuses.
               </p>
             </div>
             <div style={{ display: "flex", flexWrap: "wrap" }}>
@@ -227,118 +227,6 @@ function Projects() {
             </Button>
             <Button
               href="https://pokemon-rankers.vercel.app/"
-              target="_blank"
-              variant="light"
-            >
-              <div
-                style={{ display: "flex", alignItems: "center", gap: "10px" }}
-              >
-                <ion-icon
-                  name="open-outline"
-                  style={{ fontSize: "22px" }}
-                ></ion-icon>
-                Live Demo
-              </div>
-            </Button>
-          </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          className="project"
-        >
-          <img src={shop} alt="shop-img" />
-          <div className="project-info">
-            <h2>Game Zone</h2>
-            <div style={{ textAlign: "left", fontSize: "small" }}>
-              <p>
-                GameZone is an online video game shop equipped with essential
-                features. Clients can log in, place orders, add items to their
-                wishlist, and more. Managers have access to functionalities such
-                as order and product management.
-              </p>
-            </div>
-            <div style={{ display: "flex", flexWrap: "wrap" }}>
-              <Chip label="React" />
-              <Chip label="Redux" />
-              <Chip label="Node.js" />
-              <Chip label="Express.js" />
-              <Chip label="MongoDB" />
-            </div>
-          </div>
-          <div className="project-actions">
-            <Button
-              href="https://github.com/JacobElbaz/e-Shop"
-              target="_blank"
-              variant="outline-light"
-            >
-              <div
-                style={{ display: "flex", alignItems: "center", gap: "10px" }}
-              >
-                <ion-icon
-                  name="logo-github"
-                  style={{ fontSize: "22px" }}
-                ></ion-icon>
-                Code
-              </div>
-            </Button>
-            <Button
-              href="https://game-zone-eshop.netlify.app/"
-              target="_blank"
-              variant="light"
-            >
-              <div
-                style={{ display: "flex", alignItems: "center", gap: "10px" }}
-              >
-                <ion-icon
-                  name="open-outline"
-                  style={{ fontSize: "22px" }}
-                ></ion-icon>
-                Live Demo
-              </div>
-            </Button>
-          </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          className="project"
-        >
-          <img src={event} alt="event-img" />
-          <div className="project-info">
-            <h2>Event App</h2>
-            <div style={{ textAlign: "left", fontSize: "small" }}>
-              <p>
-                The Event App acts as a digital invitation card, featuring event
-                details and allowing guests to RSVP. Managers can access the
-                guest list and responses.
-              </p>
-            </div>
-            <div style={{ display: "flex", flexWrap: "wrap" }}>
-              <Chip label="React" />
-              <Chip label="Node.js" />
-              <Chip label="Express.js" />
-              <Chip label="MongoDB" />
-            </div>
-          </div>
-          <div className="project-actions">
-            <Button
-              href="https://github.com/JacobElbaz/event-website"
-              target="_blank"
-              variant="outline-light"
-            >
-              <div
-                style={{ display: "flex", alignItems: "center", gap: "10px" }}
-              >
-                <ion-icon
-                  name="logo-github"
-                  style={{ fontSize: "22px" }}
-                ></ion-icon>
-                Code
-              </div>
-            </Button>
-            <Button
-              href="https://event-react-frontend.netlify.app/"
               target="_blank"
               variant="light"
             >
